@@ -1,0 +1,5 @@
+@"
+OPENAI_API_KEY=sk-your-actual-openai-key-here
+SUPABASE_KEY=
+VERCEL_TOKEN=your-actual-vercel-token-here
+"@ | Out-File -FilePath ".env" -Encoding utf8

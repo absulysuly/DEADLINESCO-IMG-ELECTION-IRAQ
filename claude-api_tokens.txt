@@ -1,0 +1,18 @@
+'github-repos
+
+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
+
+
+superbase
+
+postgresql://postgres:hamlet123@db.poddahszdnnpoeiesguo.supabase.co:5432/postgres
+
+
+
+service role key eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBvZGRhaHN6ZG5ucG9laWVzZ3VvIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc2MTE0NjA4NywiZXhwIjoyMDc2NzIyMDg3fQ.3okJbJXr9dyRgsKXyNJAeozVeo1Cp6cZt4453qQ5vPo
+
+
+data api key
+https://poddahszdnnpoeiesguo.supabase.co
+
+

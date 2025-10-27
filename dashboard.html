@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎯 Iraqi Election Platform - LIVE Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: #333; min-height: 100vh; padding: 20px; }
+        .container { max-width: 1200px; margin: 0 auto; }
+        .header { text-align: center; margin-bottom: 30px; background: white; padding: 30px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); }
+        .header h1 { font-size: 2.5rem; background: linear-gradient(90deg, #1E3A8A, #3B82F6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 10px; }
+        .metrics-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-bottom: 30px; }
+        .metric-card { background: white; padding: 20px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); text-align: center; border-left: 5px solid #3B82F6; }
+        .metric-card h3 { color: #666; font-size: 1rem; margin-bottom: 10px; }
+        .metric-card .value { font-size: 2rem; font-weight: bold; color: #1E3A8A; margin-bottom: 5px; }
+        .progress { height: 8px; background: #e0e0e0; border-radius: 4px; overflow: hidden; margin-top: 10px; }
+        .progress-bar { height: 100%; background: linear-gradient(90deg, #3B82F6, #1E3A8A); }
+        .status-bar { background: white; padding: 20px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); text-align: center; margin-bottom: 20px; }
+        .status-item { display: inline-block; margin: 0 10px; padding: 10px 20px; background: #d4edda; border-radius: 25px; color: #155724; font-weight: bold; }
+        .last-update { text-align: center; color: white; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎯 IRAQI ELECTION PLATFORM - LIVE</h1>
+            <p>Monitoring 7,769 Candidates - Connected to Render Services</p>
+        </div>
+        
+        <div class="status-bar">
+            <div class="status-item">✅ DATABASE CONNECTED</div>
+            <div class="status-item">🔄 LIVE DATA</div>
+            <div class="status-item">📊 7,769 CANDIDATES</div>
+            <div class="status-item">🚀 OPERATIONAL</div>
+        </div>
+        
+        <div class="metrics-grid" id="metricsGrid">
+            <div class="metric-card">
+                <h3>🎯 Total Candidates</h3>
+                <div class="value" id="candidatesValue">0/7,769</div>
+                <div class="progress"><div class="progress-bar" id="candidatesProgress" style="width: 0%"></div></div>
+                <small id="candidatesPercent">0% Complete</small>
+            </div>
+            <div class="metric-card">
+                <h3>✅ Data Quality</h3>
+                <div class="value" id="qualityValue">0%</div>
+                <div class="progress"><div class="progress-bar" id="qualityProgress" style="width: 0%"></div></div>
+                <small>Platform Ready</small>
+            </div>
+            <div class="metric-card">
+                <h3>🏛️ Active Regions</h3>
+                <div class="value" id="regionsValue">0</div>
+                <small>Nationwide Coverage</small>
+            </div>
+            <div class="metric-card">
+                <h3>🗳️ Total Votes</h3>
+                <div class="value" id="votesValue">0</div>
+                <small>Live Tracking</small>
+            </div>
+        </div>
+
+        <div class="status-bar">
+            <h3>🔗 CONNECTED SERVICES</h3>
+            <p>
+                <strong>Backend:</strong> <a href="https://srv-d3shb0mmcj7s73a8gadg.onrender.com" target="_blank">srv-d3shb0mmcj7s73a8gadg.onrender.com</a> |
+                <strong>Frontend:</strong> <a href="https://srv-d3ra4p24d50c73bksgdg.onrender.com" target="_blank">srv-d3ra4p24d50c73bksgdg.onrender.com</a> |
+                <strong>Database:</strong> <a href="https://poddahszdnnpoeiesguo.supabase.co" target="_blank">Supabase</a>
+            </p>
+        </div>
+        
+        <div class="last-update" id="lastUpdate">Last updated: Loading...</div>
+    </div>
+
+    <script>
+        async function updateMetrics() {
+            try {
+                const response = await fetch('/api/data');
+                const data = await response.json();
+                
+                // Update metrics
+                document.getElementById('candidatesValue').textContent = data.totalCandidates.toLocaleString() + '/7,769';
+                document.getElementById('qualityValue').textContent = data.dataQuality + '%';
+                document.getElementById('regionsValue').textContent = data.activeRegions;
+                document.getElementById('votesValue').textContent = data.totalVotes.toLocaleString();
+                
+                // Update progress bars
+                const candidatesPercent = (data.totalCandidates / 7769 * 100).toFixed(1);
+                document.getElementById('candidatesProgress').style.width = candidatesPercent + '%';
+                document.getElementById('candidatesPercent').textContent = candidatesPercent + '% Complete';
+                
+                document.getElementById('qualityProgress').style.width = data.dataQuality + '%';
+                
+                document.getElementById('lastUpdate').textContent = 'Last updated: ' + new Date(data.timestamp).toLocaleString();
+            } catch (error) {
+                console.error('Error fetching data:', error);
+                document.getElementById('lastUpdate').textContent = 'Error updating data - Retrying...';
+            }
+        }
+
+        // Update every 3 seconds
+        setInterval(updateMetrics, 3000);
+        updateMetrics(); // Initial call
+    </script>
+</body>
+</html>

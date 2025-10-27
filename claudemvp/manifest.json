@@ -1,0 +1,119 @@
+{
+  "name": "منصة الانتخابات العراقية | Iraqi Election Platform",
+  "short_name": "انتخابات العراق",
+  "description": "قارن بين 7,769 مرشحاً في مكان واحد | Compare all 7,769 election candidates in one place",
+  "lang": "ar",
+  "dir": "rtl",
+  "start_url": "/?source=pwa",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#1a73e8",
+  "background_color": "#ffffff",
+  "categories": ["government", "politics", "education", "news"],
+  "iarc_rating_id": "e84b072d-71b3-4d3e-86ae-31a8ce4e53b7",
+  "icons": [
+    {
+      "src": "/icons/icon-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-128x128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-152x152.png",
+      "sizes": "152x152",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshots/home.png",
+      "sizes": "540x720",
+      "type": "image/png",
+      "label": "Home Screen - Candidate Search"
+    },
+    {
+      "src": "/screenshots/compare.png",
+      "sizes": "540x720",
+      "type": "image/png",
+      "label": "Compare Candidates Feature"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "بحث عن مرشح | Search Candidates",
+      "short_name": "بحث | Search",
+      "description": "Search for candidates by name or district",
+      "url": "/search?source=pwa_shortcut",
+      "icons": [
+        {
+          "src": "/icons/search-96x96.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "مقارنة المرشحين | Compare",
+      "short_name": "مقارنة | Compare",
+      "description": "Compare two candidates side by side",
+      "url": "/compare?source=pwa_shortcut",
+      "icons": [
+        {
+          "src": "/icons/compare-96x96.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "المرشحون الأكثر مشاهدة | Trending",
+      "short_name": "شائع | Trending",
+      "description": "View most popular candidates",
+      "url": "/trending?source=pwa_shortcut",
+      "icons": [
+        {
+          "src": "/icons/trending-96x96.png",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false
+}

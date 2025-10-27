@@ -1,0 +1,137 @@
+Skip to content
+Navigation Menu
+absulysuly
+Copy-of-Hamlet-social
+
+Type / to search
+Code
+Issues
+Pull requests
+7
+Actions
+Projects
+Security
+Insights
+Settings
+Fix TopNavBar imports and add MVP tooling #12
+ Draft
+absulysuly wants to merge 1 commit into main from codex/create-comprehensive-mvp-validation-checklist  
++409 −6 
+ Conversation 0
+ Commits 1
+ Checks 0
+ Files changed 7
+Conversation
+absulysuly
+Owner
+absulysuly commented now
+Summary
+remove duplicate React import usage in TopNavBar to prevent identifier collisions
+add a comprehensive PowerShell maintenance script and accompanying MVP validation checklist
+drop Tailwind CDN usage, track Next.js env typings, and add i18next dependency with .next ignored in git
+Testing
+npm run lint (prompts for configuration and requires manual selection)
+npm run build (fails offline when fetching Google Fonts and due to missing registry access for i18next prior to install)
+https://chatgpt.com/codex/tasks/task_e_68f458b09d048332bb52c0039463a41e
+
+@absulysuly
+Remove duplicate React import and add build tooling
+4e0ed86
+@absulysuly absulysuly added the codex label now — with  ChatGPT Codex Connector
+@vercelVercel
+vercel bot commented now
+The latest updates on your projects. Learn more about Vercel for GitHub.
+
+Project	Deployment	Preview	Comments	Updated (UTC)
+copy-of-hamlet-social	Building Building	Preview	Comment	Oct 19, 2025 3:31am
+iraqi-election-platform	Building Building	Preview	Comment	Oct 19, 2025 3:31am
+test-new-frontend	Building Building	Preview	Comment	Oct 19, 2025 3:31am
+💡 Enable Vercel Agent with $100 free credit for automated AI reviews
+
+@coderabbitaicoderabbitai
+coderabbitai bot commented now
+Important
+
+Review skipped
+Draft detected.
+
+Please check the settings in the CodeRabbit UI or the .coderabbit.yaml file in this repository. To trigger a single review, invoke the @coderabbitai review command.
+
+You can disable this status message by setting the reviews.review_status to false in the CodeRabbit configuration file.
+
+✨ Finishing touches
+Thanks for using CodeRabbit! It's free for OSS, and your support helps us grow. If you like it, consider giving us a shout-out.
+
+❤️ Share
+Comment @coderabbitai help to get the list of available commands and usage tips.
+
+This branch has not been deployed
+No deployments
+Merge info
+Some checks haven't completed yet
+3 pending, 2 successful checks
+
+
+pending checks
+Vercel – copy-of-hamlet-social
+Vercel – copy-of-hamlet-socialWaiting for status to be reported — Vercel is deploying your app
+Vercel – iraqi-election-platform
+Vercel – iraqi-election-platformWaiting for status to be reported — Vercel is deploying your app
+Vercel – test-new-frontend
+Vercel – test-new-frontendWaiting for status to be reported — Vercel is deploying your app
+successful checks
+CodeRabbit
+CodeRabbit — Review skipped
+Vercel Preview Comments
+Vercel Preview Comments — ✅ No unresolved feedback
+No conflicts with base branch
+Merging can be performed automatically.
+
+This pull request is still a work in progress
+Draft pull requests cannot be merged.
+
+You can also merge this with the command line. 
+@absulysuly
+
+
+Add a comment
+Comment
+ 
+Add your comment here...
+ 
+Remember, contributions to this repository should follow our GitHub Community Guidelines.
+ ProTip! Add .patch or .diff to the end of URLs for Git’s plaintext views.
+Reviewers
+No reviews
+Assignees
+No one—
+Labels
+codex
+Projects
+None yet
+Milestone
+No milestone
+Development
+Successfully merging this pull request may close these issues.
+
+None yet
+
+
+Notifications
+Customize
+You’re receiving notifications because you authored the thread.
+1 participant
+@absulysuly
+Footer
+© 2025 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Community
+Docs
+Contact
+Manage cookies
+Do not share my personal information
+coderabbitai bot commented Important Review skipped Draft detected. Please check the settings in the CodeRabbit UI or the .coderabbit.yaml file in this repository. To trigger a single review, invoke the @coderabbitai review command. You can disable this status message by setting the reviews.review_status to false in the CodeRabbit configuration file. ✨ Finishing touches Thanks for using CodeRabbit! It's free for OSS, and your support helps us grow. If you like it, consider giving us a shout-out. ❤️ Share Comment @coderabbitai help to get the list of available commands and usage tips.

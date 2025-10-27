@@ -1,0 +1,1083 @@
+**********************
+PowerShell transcript start
+Start time: 20251023182200
+Username: DESKTOP-MNPTPAS\HB LAPTOP STORE
+RunAs User: DESKTOP-MNPTPAS\HB LAPTOP STORE
+Configuration Name: 
+Machine: DESKTOP-MNPTPAS (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Program Files\PowerShell\7\pwsh.dll -ExecutionPolicy Bypass -File E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1
+Process ID: 1960
+PSVersion: 7.5.3
+PSEdition: Core
+GitCommitId: 7.5.3
+OS: Microsoft Windows 10.0.26200
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+Transcript started, output file is E:\HamletUnified\logs\deploy-log_20251023_182159.txt
+
+🧠 Logging started at E:\HamletUnified\logs\deploy-log_20251023_182159.txt
+
+🔧 Fixing PATH and ensuring CLIs...
+✅ Added npm bin to PATH.
+Installing global CLIs (vercel, render-cli)...
+
+🧩 Creating environment files...
+
+⚙️ Building backend...
+❌ package.json missing in backend folder.
+
+⚙️ Building frontend...
+❌ package.json missing in frontend folder.
+
+🚀 Deploying backend to Render...
+⚠️ Render CLI failed. Please verify login or rerun manually.
+
+🚀 Deploying frontend to Vercel...
+⚠️ Vercel CLI failed. Try 'vercel --prod' manually.
+
+📤 Importing candidates into Supabase...
+PS>TerminatingError(Test-Path): "A parameter cannot be found that matches parameter name 'and'."
+Test-Path: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:106
+Line |
+ 106 |  if (Test-Path $importScript -and (Test-Path $DataFile)) {
+     |                              ~~~~
+     | A parameter cannot be found that matches parameter name 'and'.
+Test-Path: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:106
+Line |
+ 106 |  if (Test-Path $importScript -and (Test-Path $DataFile)) {
+     |                              ~~~~
+     | A parameter cannot be found that matches parameter name 'and'.
+
+
+🩺 Monitoring backend and frontend uptime...
+PS>TerminatingError(Invoke-WebRequest): "Not Found
+"
+⏳ Waiting for Backend...
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt' because it is being used by another process.
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt'
+     | because it is being used by another process.
+
+PS>TerminatingError(Invoke-WebRequest): "Not Found
+"
+⏳ Waiting for Backend...
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt' because it is being used by another process.
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt'
+     | because it is being used by another process.
+
+PS>TerminatingError(Invoke-WebRequest): "Not Found
+"
+⏳ Waiting for Backend...
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt' because it is being used by another process.
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt'
+     | because it is being used by another process.
+
+PS>TerminatingError(Invoke-WebRequest): "Not Found
+"
+⏳ Waiting for Backend...
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt' because it is being used by another process.
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt'
+     | because it is being used by another process.
+
+PS>TerminatingError(Invoke-WebRequest): "Not Found
+"
+⏳ Waiting for Backend...
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt' because it is being used by another process.
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt'
+     | because it is being used by another process.
+
+PS>TerminatingError(Invoke-WebRequest): "Not Found
+"
+⏳ Waiting for Backend...
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt' because it is being used by another process.
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt'
+     | because it is being used by another process.
+
+PS>TerminatingError(Invoke-WebRequest): "Not Found
+"
+⏳ Waiting for Backend...
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt' because it is being used by another process.
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt'
+     | because it is being used by another process.
+
+PS>TerminatingError(Invoke-WebRequest): "Not Found
+"
+⏳ Waiting for Backend...
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt' because it is being used by another process.
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt'
+     | because it is being used by another process.
+
+PS>TerminatingError(Invoke-WebRequest): "Not Found
+"
+⏳ Waiting for Backend...
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt' because it is being used by another process.
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt'
+     | because it is being used by another process.
+
+PS>TerminatingError(Invoke-WebRequest): "Not Found
+"
+⏳ Waiting for Backend...
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt' because it is being used by another process.
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt'
+     | because it is being used by another process.
+
+PS>TerminatingError(Invoke-WebRequest): "Not Found
+"
+⏳ Waiting for Backend...
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt' because it is being used by another process.
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt'
+     | because it is being used by another process.
+
+PS>TerminatingError(Invoke-WebRequest): "Not Found
+"
+⏳ Waiting for Backend...
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt' because it is being used by another process.
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt'
+     | because it is being used by another process.
+
+PS>TerminatingError(Invoke-WebRequest): "Not Found
+"
+⏳ Waiting for Backend...
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt' because it is being used by another process.
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt'
+     | because it is being used by another process.
+
+PS>TerminatingError(Invoke-WebRequest): "Not Found
+"
+⏳ Waiting for Backend...
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt' because it is being used by another process.
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt'
+     | because it is being used by another process.
+
+PS>TerminatingError(Invoke-WebRequest): "Not Found
+"
+⏳ Waiting for Backend...
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt' because it is being used by another process.
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt'
+     | because it is being used by another process.
+
+PS>TerminatingError(Invoke-WebRequest): "Not Found
+"
+⏳ Waiting for Backend...
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt' because it is being used by another process.
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt'
+     | because it is being used by another process.
+
+PS>TerminatingError(Invoke-WebRequest): "Not Found
+"
+⏳ Waiting for Backend...
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt' because it is being used by another process.
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt'
+     | because it is being used by another process.
+
+PS>TerminatingError(Invoke-WebRequest): "Not Found
+"
+⏳ Waiting for Backend...
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt' because it is being used by another process.
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt'
+     | because it is being used by another process.
+
+PS>TerminatingError(Invoke-WebRequest): "Not Found
+"
+⏳ Waiting for Backend...
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt' because it is being used by another process.
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt'
+     | because it is being used by another process.
+
+PS>TerminatingError(Invoke-WebRequest): "Not Found
+"
+⏳ Waiting for Backend...
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt' because it is being used by another process.
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt'
+     | because it is being used by another process.
+
+PS>TerminatingError(Invoke-WebRequest): "Not Found
+"
+⏳ Waiting for Backend...
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt' because it is being used by another process.
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt'
+     | because it is being used by another process.
+
+PS>TerminatingError(Invoke-WebRequest): "Not Found
+"
+⏳ Waiting for Backend...
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt' because it is being used by another process.
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt'
+     | because it is being used by another process.
+
+PS>TerminatingError(Invoke-WebRequest): "Not Found
+"
+⏳ Waiting for Backend...
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt' because it is being used by another process.
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt'
+     | because it is being used by another process.
+
+PS>TerminatingError(Invoke-WebRequest): "Not Found
+"
+⏳ Waiting for Backend...
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt' because it is being used by another process.
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt'
+     | because it is being used by another process.
+
+PS>TerminatingError(Invoke-WebRequest): "Not Found
+"
+⏳ Waiting for Backend...
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt' because it is being used by another process.
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt'
+     | because it is being used by another process.
+
+PS>TerminatingError(Invoke-WebRequest): "Not Found
+"
+⏳ Waiting for Backend...
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt' because it is being used by another process.
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt'
+     | because it is being used by another process.
+
+PS>TerminatingError(Invoke-WebRequest): "Not Found
+"
+⏳ Waiting for Backend...
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt' because it is being used by another process.
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt'
+     | because it is being used by another process.
+
+PS>TerminatingError(Invoke-WebRequest): "Not Found
+"
+⏳ Waiting for Backend...
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt' because it is being used by another process.
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt'
+     | because it is being used by another process.
+
+PS>TerminatingError(Invoke-WebRequest): "Not Found
+"
+⏳ Waiting for Backend...
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt' because it is being used by another process.
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt'
+     | because it is being used by another process.
+
+PS>TerminatingError(Invoke-WebRequest): "Not Found
+"
+⏳ Waiting for Backend...
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt' because it is being used by another process.
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt'
+     | because it is being used by another process.
+
+PS>TerminatingError(Invoke-WebRequest): "Not Found
+"
+⏳ Waiting for Backend...
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt' because it is being used by another process.
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt'
+     | because it is being used by another process.
+
+PS>TerminatingError(Invoke-WebRequest): "Not Found
+"
+⏳ Waiting for Backend...
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt' because it is being used by another process.
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt'
+     | because it is being used by another process.
+
+PS>TerminatingError(Invoke-WebRequest): "Not Found
+"
+⏳ Waiting for Backend...
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt' because it is being used by another process.
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt'
+     | because it is being used by another process.
+
+PS>TerminatingError(Invoke-WebRequest): "Not Found
+"
+⏳ Waiting for Backend...
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt' because it is being used by another process.
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt'
+     | because it is being used by another process.
+
+PS>TerminatingError(Invoke-WebRequest): "Not Found
+"
+⏳ Waiting for Backend...
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt' because it is being used by another process.
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt'
+     | because it is being used by another process.
+
+PS>TerminatingError(Invoke-WebRequest): "Not Found
+"
+⏳ Waiting for Backend...
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt' because it is being used by another process.
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt'
+     | because it is being used by another process.
+
+PS>TerminatingError(Invoke-WebRequest): "Not Found
+"
+⏳ Waiting for Backend...
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt' because it is being used by another process.
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt'
+     | because it is being used by another process.
+
+PS>TerminatingError(Invoke-WebRequest): "Not Found
+"
+⏳ Waiting for Backend...
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt' because it is being used by another process.
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt'
+     | because it is being used by another process.
+
+PS>TerminatingError(Invoke-WebRequest): "Not Found
+"
+⏳ Waiting for Backend...
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt' because it is being used by another process.
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt'
+     | because it is being used by another process.
+
+PS>TerminatingError(Invoke-WebRequest): "Not Found
+"
+⏳ Waiting for Backend...
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt' because it is being used by another process.
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt'
+     | because it is being used by another process.
+
+PS>TerminatingError(Invoke-WebRequest): "Not Found
+"
+⏳ Waiting for Backend...
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt' because it is being used by another process.
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt'
+     | because it is being used by another process.
+
+PS>TerminatingError(Invoke-WebRequest): "Not Found
+"
+⏳ Waiting for Backend...
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt' because it is being used by another process.
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt'
+     | because it is being used by another process.
+
+PS>TerminatingError(Invoke-WebRequest): "Not Found
+"
+⏳ Waiting for Backend...
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt' because it is being used by another process.
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt'
+     | because it is being used by another process.
+
+PS>TerminatingError(Invoke-WebRequest): "Not Found
+"
+⏳ Waiting for Backend...
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt' because it is being used by another process.
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt'
+     | because it is being used by another process.
+
+PS>TerminatingError(Invoke-WebRequest): "Not Found
+"
+⏳ Waiting for Backend...
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt' because it is being used by another process.
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt'
+     | because it is being used by another process.
+
+PS>TerminatingError(Invoke-WebRequest): "Not Found
+"
+⏳ Waiting for Backend...
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt' because it is being used by another process.
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt'
+     | because it is being used by another process.
+
+PS>TerminatingError(Invoke-WebRequest): "Not Found
+"
+⏳ Waiting for Backend...
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt' because it is being used by another process.
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt'
+     | because it is being used by another process.
+
+PS>TerminatingError(Invoke-WebRequest): "Not Found
+"
+⏳ Waiting for Backend...
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt' because it is being used by another process.
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt'
+     | because it is being used by another process.
+
+PS>TerminatingError(Invoke-WebRequest): "Not Found
+"
+⏳ Waiting for Backend...
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt' because it is being used by another process.
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt'
+     | because it is being used by another process.
+
+PS>TerminatingError(Invoke-WebRequest): "Not Found
+"
+⏳ Waiting for Backend...
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt' because it is being used by another process.
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt'
+     | because it is being used by another process.
+
+PS>TerminatingError(Invoke-WebRequest): "Not Found
+"
+⏳ Waiting for Backend...
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt' because it is being used by another process.
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt'
+     | because it is being used by another process.
+
+PS>TerminatingError(Invoke-WebRequest): "Not Found
+"
+⏳ Waiting for Backend...
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt' because it is being used by another process.
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt'
+     | because it is being used by another process.
+
+PS>TerminatingError(Invoke-WebRequest): "Not Found
+"
+⏳ Waiting for Backend...
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt' because it is being used by another process.
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt'
+     | because it is being used by another process.
+
+PS>TerminatingError(Invoke-WebRequest): "Not Found
+"
+⏳ Waiting for Backend...
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt' because it is being used by another process.
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt'
+     | because it is being used by another process.
+
+PS>TerminatingError(Invoke-WebRequest): "Not Found
+"
+⏳ Waiting for Backend...
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt' because it is being used by another process.
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt'
+     | because it is being used by another process.
+
+PS>TerminatingError(Invoke-WebRequest): "Not Found
+"
+⏳ Waiting for Backend...
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt' because it is being used by another process.
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt'
+     | because it is being used by another process.
+
+PS>TerminatingError(Invoke-WebRequest): "Not Found
+"
+⏳ Waiting for Backend...
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt' because it is being used by another process.
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt'
+     | because it is being used by another process.
+
+PS>TerminatingError(Invoke-WebRequest): "Not Found
+"
+⏳ Waiting for Backend...
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt' because it is being used by another process.
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt'
+     | because it is being used by another process.
+
+PS>TerminatingError(Invoke-WebRequest): "Not Found
+"
+⏳ Waiting for Backend...
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt' because it is being used by another process.
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt'
+     | because it is being used by another process.
+
+PS>TerminatingError(Invoke-WebRequest): "Not Found
+"
+⏳ Waiting for Backend...
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt' because it is being used by another process.
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt'
+     | because it is being used by another process.
+
+⚠️ Timeout: Backend not live after 10 minutes.
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:140
+Line |
+ 140 |      Add-Content -Path $LogFile -Value "[$(Get-Date)] ⚠️ Timeout for $ …
+     |      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt' because it is being used by another process.
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:140
+Line |
+ 140 |      Add-Content -Path $LogFile -Value "[$(Get-Date)] ⚠️ Timeout for $ …
+     |      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt'
+     | because it is being used by another process.
+
+PS>TerminatingError(Invoke-WebRequest): "The deployment could not be found on Vercel.
+
+DEPLOYMENT_NOT_FOUND
+
+fra1::tx7sn-1761233646462-79b68d40917f
+"
+⏳ Waiting for Frontend...
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt' because it is being used by another process.
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt'
+     | because it is being used by another process.
+
+PS>TerminatingError(Invoke-WebRequest): "The deployment could not be found on Vercel.
+
+DEPLOYMENT_NOT_FOUND
+
+fra1::v4bqw-1761233656758-af822c0e000f
+"
+⏳ Waiting for Frontend...
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt' because it is being used by another process.
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt'
+     | because it is being used by another process.
+
+PS>TerminatingError(Invoke-WebRequest): "The deployment could not be found on Vercel.
+
+DEPLOYMENT_NOT_FOUND
+
+fra1::qwvlb-1761233667159-ca18cc4512b6
+"
+⏳ Waiting for Frontend...
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt' because it is being used by another process.
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt'
+     | because it is being used by another process.
+
+PS>TerminatingError(Invoke-WebRequest): "The deployment could not be found on Vercel.
+
+DEPLOYMENT_NOT_FOUND
+
+fra1::hkmtp-1761233677599-639ca4d3917e
+"
+⏳ Waiting for Frontend...
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt' because it is being used by another process.
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt'
+     | because it is being used by another process.
+
+PS>TerminatingError(Invoke-WebRequest): "The deployment could not be found on Vercel.
+
+DEPLOYMENT_NOT_FOUND
+
+fra1::dvf4r-1761233687905-c9884a8eb362
+"
+⏳ Waiting for Frontend...
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt' because it is being used by another process.
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt'
+     | because it is being used by another process.
+
+PS>TerminatingError(Invoke-WebRequest): "The deployment could not be found on Vercel.
+
+DEPLOYMENT_NOT_FOUND
+
+fra1::8ngsg-1761233698214-9c672ff10b4c
+"
+⏳ Waiting for Frontend...
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt' because it is being used by another process.
+Add-Content: E:\HamletUnified\MEGA_EXECUTOR_V3_MONITOR_LOG.ps1:134
+Line |
+ 134 |              Add-Content -Path $LogFile -Value "[$(Get-Date)] Waiting  …
+     |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The process cannot access the file 'E:\HamletUnified\logs\deploy-log_20251023_182159.txt'
+     | because it is being used by another process.
+
