@@ -1,0 +1,21 @@
+{
+  "postId": "post_011",
+  "language": "ar",
+  "platform": "facebook",
+  "content": "🗳️ صوتك مهم! شارك في بناء مستقبل العراق من خلال التسجيل للانتخابات. زر موقعنا للتعرف على المرشحين والفعاليات في محافظتك.",
+  "hashtags": [
+    "#العراق",
+    "#الانتخابات",
+    "#صوتك_مهم",
+    "#المشاركة_المدنية"
+  ],
+  "governorate": "Erbil",
+  "targetAudience": "18-35",
+  "scheduledFor": "2025-10-30T13:29:22.262Z",
+  "visualDescription": "Illustration of an Iraqi citizen casting a ballot with Iraqi flag colors in background",
+  "tone": "engaging",
+  "contentType": "call-to-action",
+  "neutralityScore": 1,
+  "timestamp": "2025-10-28T21:29:22.252Z",
+  "agentSignature": "Agent4_ContentCreation"
+}

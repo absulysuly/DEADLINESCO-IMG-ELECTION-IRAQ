@@ -1,0 +1,183 @@
+{
+    "agentId": "Agent5_SocialScheduler",
+    "agentName": "Social Media Scheduler",
+    "version": "1.0.0",
+    "executionOrder": 4,
+    "simulationMode": true,
+    "platformMetrics": {
+        "facebook": {
+            "viewsRange": {
+                "min": 800,
+                "max": 2500
+            },
+            "likeRate": 0.07,
+            "shareRate": 0.02,
+            "commentRate": 0.008,
+            "reachMultiplier": 2.5,
+            "variance": 0.15
+        },
+        "twitter": {
+            "viewsRange": {
+                "min": 500,
+                "max": 1800
+            },
+            "likeRate": 0.06,
+            "shareRate": 0.015,
+            "commentRate": 0.006,
+            "reachMultiplier": 3.0,
+            "variance": 0.20
+        },
+        "instagram": {
+            "viewsRange": {
+                "min": 600,
+                "max": 2000
+            },
+            "likeRate": 0.08,
+            "shareRate": 0.01,
+            "commentRate": 0.01,
+            "reachMultiplier": 2.0,
+            "variance": 0.15
+        }
+    },
+    "governorateWeights": {
+        "Baghdad": 1.5,
+        "Basra": 1.4,
+        "Nineveh": 1.4,
+        "Erbil": 1.3,
+        "Sulaymaniyah": 1.2,
+        "Duhok": 1.1,
+        "Anbar": 1.1,
+        "Diyala": 1.0,
+        "Kirkuk": 1.0,
+        "Najaf": 1.0,
+        "Karbala": 1.0,
+        "Babil": 0.9,
+        "Dhi Qar": 0.9,
+        "Maysan": 0.8,
+        "Wasit": 0.8,
+        "Saladin": 0.8,
+        "Muthanna": 0.7,
+        "Qadisiyyah": 0.8,
+        "National": 1.8
+    },
+    "languageWeights": {
+        "arabic": {
+            "Baghdad": 1.0,
+            "Basra": 1.0,
+            "Nineveh": 1.0,
+            "Erbil": 0.5,
+            "Sulaymaniyah": 0.4,
+            "Duhok": 0.4,
+            "default": 1.0
+        },
+        "kurdish": {
+            "Erbil": 1.2,
+            "Sulaymaniyah": 1.3,
+            "Duhok": 1.2,
+            "Kirkuk": 0.8,
+            "default": 0.3
+        }
+    },
+    "contentTypeMultipliers": {
+        "call-to-action": 1.2,
+        "educational": 1.0,
+        "event-promotion": 0.9,
+        "civic-engagement": 1.1,
+        "announcement": 0.95
+    },
+    "toneMultipliers": {
+        "engaging": 1.1,
+        "informative": 1.0,
+        "urgent": 1.15,
+        "celebratory": 1.2,
+        "neutral": 0.95
+    },
+    "timeBasedPerformance": {
+        "peakHours": {
+            "hours": [
+                8,
+                9,
+                18,
+                19
+            ],
+            "multiplier": 1.3
+        },
+        "goodHours": {
+            "hours": [
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17
+            ],
+            "multiplier": 1.0
+        },
+        "offPeakHours": {
+            "hours": [
+                6,
+                7,
+                20,
+                21,
+                22
+            ],
+            "multiplier": 0.8
+        }
+    },
+    "engagementTargets": {
+        "minEngagementRate": 0.05,
+        "maxEngagementRate": 0.10,
+        "targetEngagementRate": 0.075,
+        "minTotalViews": 50000,
+        "targetTotalViews": 70000
+    },
+    "schedulingRules": {
+        "startTime": "08:00",
+        "endTime": "20:00",
+        "intervalHours": 2,
+        "maxPostsPerDay": 15,
+        "distributeEvenly": true
+    },
+    "randomization": {
+        "enabled": true,
+        "seed": null,
+        "varianceRange": 0.15
+    },
+    "performanceTiers": {
+        "highPerforming": {
+            "engagementRateThreshold": 0.09,
+            "label": "High Performance"
+        },
+        "mediumPerforming": {
+            "engagementRateThreshold": 0.06,
+            "label": "Medium Performance"
+        },
+        "lowPerforming": {
+            "engagementRateThreshold": 0.03,
+            "label": "Low Performance"
+        }
+    },
+    "inputPaths": {
+        "contentQueue": "../agent_4_content_creation/content_queue"
+    },
+    "outputPaths": {
+        "metricsData": "./social_metrics.json",
+        "schedulerLog": "./scheduler_log.json"
+    },
+    "validation": {
+        "validateSchema": true,
+        "checkMinimumViews": true,
+        "checkEngagementRanges": true,
+        "ensureRealisticMetrics": true
+    },
+    "debugMode": false
+}
+
+
+
+
+
+
+

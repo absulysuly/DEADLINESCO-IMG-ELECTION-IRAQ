@@ -1,0 +1,29 @@
+{
+    "name": "6-ai-marketing-agents",
+    "version": "2.0.0",
+    "description": "6 cooperative AI agents - CONTINUOUS MODE for maximum data collection",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "agent:events": "node agent_2_event_outreach/index.js",
+        "agent:candidates": "node agent_3_candidate_intelligence/index.js",
+        "agent:content": "node agent_4_content_creation/index.js",
+        "agent:scheduler": "node agent_5_social_scheduler/index.js",
+        "agent:qa": "node agent_6_integration_qa/index.js",
+        "agent:strategist": "node agent_1_marketing_strategist/index.js",
+        "agents:run-once": "node run_all_agents.js",
+        "agents:nonstop": "node scheduler_continuous.js",
+        "agents:standard": "node scheduler.js",
+        "agents:start": "node scheduler_continuous.js"
+    },
+    "keywords": [
+        "iraq",
+        "election",
+        "marketing",
+        "ai-agents",
+        "automation",
+        "continuous"
+    ],
+    "author": "HamletUnified",
+    "license": "MIT"
+}

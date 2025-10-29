@@ -1,0 +1,153 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Social Media Metrics Schema",
+    "description": "Schema for social media engagement metrics in the Iraqi Election Platform",
+    "type": "object",
+    "required": [
+        "metrics",
+        "summary"
+    ],
+    "properties": {
+        "metrics": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "required": [
+                    "postId",
+                    "platform",
+                    "views",
+                    "timestamp",
+                    "agentSignature"
+                ],
+                "properties": {
+                    "postId": {
+                        "type": "string",
+                        "pattern": "^post_[0-9]{3,}$",
+                        "description": "Reference to post ID"
+                    },
+                    "platform": {
+                        "type": "string",
+                        "enum": [
+                            "facebook",
+                            "twitter",
+                            "instagram",
+                            "x"
+                        ],
+                        "description": "Social media platform"
+                    },
+                    "views": {
+                        "type": "integer",
+                        "minimum": 0,
+                        "description": "Total views/impressions"
+                    },
+                    "likes": {
+                        "type": "integer",
+                        "minimum": 0,
+                        "description": "Total likes/reactions"
+                    },
+                    "shares": {
+                        "type": "integer",
+                        "minimum": 0,
+                        "description": "Total shares/retweets"
+                    },
+                    "comments": {
+                        "type": "integer",
+                        "minimum": 0,
+                        "description": "Total comments"
+                    },
+                    "reach": {
+                        "type": "integer",
+                        "minimum": 0,
+                        "description": "Unique users reached"
+                    },
+                    "engagement": {
+                        "type": "number",
+                        "minimum": 0,
+                        "maximum": 1,
+                        "description": "Engagement rate (0-1)"
+                    },
+                    "governorate": {
+                        "type": "string",
+                        "enum": [
+                            "Baghdad",
+                            "Basra",
+                            "Nineveh",
+                            "Erbil",
+                            "Sulaymaniyah",
+                            "Duhok",
+                            "Anbar",
+                            "Diyala",
+                            "Kirkuk",
+                            "Najaf",
+                            "Karbala",
+                            "Babil",
+                            "Dhi Qar",
+                            "Maysan",
+                            "Wasit",
+                            "Saladin",
+                            "Muthanna",
+                            "Qadisiyyah",
+                            "National"
+                        ]
+                    },
+                    "timestamp": {
+                        "type": "string",
+                        "format": "date-time",
+                        "description": "ISO 8601 timestamp of metrics collection"
+                    },
+                    "agentSignature": {
+                        "type": "string",
+                        "pattern": "^Agent[0-9]_[A-Za-z]+$",
+                        "description": "Agent that created this metric"
+                    }
+                }
+            }
+        },
+        "summary": {
+            "type": "object",
+            "required": [
+                "totalPosts",
+                "totalViews",
+                "totalEngagement"
+            ],
+            "properties": {
+                "totalPosts": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "description": "Total number of posts tracked"
+                },
+                "totalViews": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "description": "Aggregate views across all posts"
+                },
+                "totalEngagement": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "description": "Aggregate engagement (likes + shares + comments)"
+                },
+                "averageEngagementRate": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 1,
+                    "description": "Average engagement rate"
+                },
+                "topPerformingGovernorate": {
+                    "type": "string",
+                    "description": "Governorate with highest engagement"
+                },
+                "topPerformingPlatform": {
+                    "type": "string",
+                    "description": "Platform with highest engagement"
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+

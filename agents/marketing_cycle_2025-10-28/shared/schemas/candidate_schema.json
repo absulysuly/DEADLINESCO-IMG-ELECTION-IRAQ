@@ -1,0 +1,121 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Candidate Data Schema",
+    "description": "Schema for candidate profile data in the Iraqi Election Platform",
+    "type": "object",
+    "required": [
+        "candidates"
+    ],
+    "properties": {
+        "candidates": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "required": [
+                    "id",
+                    "name",
+                    "governorate",
+                    "timestamp",
+                    "agentSignature"
+                ],
+                "properties": {
+                    "id": {
+                        "type": "string",
+                        "pattern": "^cand_[0-9]{3,}$",
+                        "description": "Unique candidate identifier"
+                    },
+                    "name": {
+                        "type": "string",
+                        "description": "Full name in Arabic or Kurdish"
+                    },
+                    "governorate": {
+                        "type": "string",
+                        "enum": [
+                            "Baghdad",
+                            "Basra",
+                            "Nineveh",
+                            "Erbil",
+                            "Sulaymaniyah",
+                            "Duhok",
+                            "Anbar",
+                            "Diyala",
+                            "Kirkuk",
+                            "Najaf",
+                            "Karbala",
+                            "Babil",
+                            "Dhi Qar",
+                            "Maysan",
+                            "Wasit",
+                            "Saladin",
+                            "Muthanna",
+                            "Qadisiyyah"
+                        ]
+                    },
+                    "party": {
+                        "type": "string",
+                        "description": "Political party affiliation"
+                    },
+                    "contact": {
+                        "type": "string",
+                        "pattern": "^\\+964-[0-9]{3}-[0-9]{3}-[0-9]{4}$",
+                        "description": "Contact phone number"
+                    },
+                    "socialMedia": {
+                        "type": "object",
+                        "properties": {
+                            "facebook": {
+                                "type": "string",
+                                "format": "uri"
+                            },
+                            "twitter": {
+                                "type": "string",
+                                "format": "uri"
+                            },
+                            "instagram": {
+                                "type": "string",
+                                "format": "uri"
+                            }
+                        }
+                    },
+                    "bio": {
+                        "type": "string",
+                        "description": "Brief biography"
+                    },
+                    "verified": {
+                        "type": "boolean",
+                        "description": "Whether the candidate data has been verified"
+                    },
+                    "timestamp": {
+                        "type": "string",
+                        "format": "date-time",
+                        "description": "ISO 8601 timestamp of data creation"
+                    },
+                    "agentSignature": {
+                        "type": "string",
+                        "pattern": "^Agent[0-9]_[A-Za-z]+$",
+                        "description": "Agent that created this entry"
+                    }
+                }
+            }
+        },
+        "metadata": {
+            "type": "object",
+            "properties": {
+                "totalCount": {
+                    "type": "integer"
+                },
+                "lastUpdated": {
+                    "type": "string",
+                    "format": "date-time"
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+

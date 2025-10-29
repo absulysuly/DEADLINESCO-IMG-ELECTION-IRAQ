@@ -1,0 +1,242 @@
+{
+    "agentId": "Agent6_IntegrationQA",
+    "agentName": "Integration & QA Agent",
+    "version": "1.0.0",
+    "executionOrder": 5,
+    "validationTargets": {
+        "Agent2_EventOutreach": {
+            "dataFile": "../agent_2_event_outreach/events_mock.json",
+            "schemaFile": "../shared/schemas/event_schema.json",
+            "required": true,
+            "minimumRecords": 18
+        },
+        "Agent3_CandidateIntelligence": {
+            "dataFile": "../agent_3_candidate_intelligence/candidates_mock.json",
+            "schemaFile": "../shared/schemas/candidate_schema.json",
+            "required": true,
+            "minimumRecords": 36
+        },
+        "Agent4_ContentCreation": {
+            "dataDirectory": "../agent_4_content_creation/content_queue",
+            "schemaFile": "../shared/schemas/content_schema.json",
+            "required": true,
+            "minimumRecords": 20
+        },
+        "Agent5_SocialScheduler": {
+            "dataFile": "../agent_5_social_scheduler/social_metrics.json",
+            "schemaFile": "../shared/schemas/metrics_schema.json",
+            "required": true,
+            "minimumRecords": 20
+        }
+    },
+    "neutralitySettings": {
+        "minimumScore": 0.8,
+        "targetScore": 1.0,
+        "prohibitedKeywords": {
+            "ar": [
+                "أفضل مرشح",
+                "صوت لـ",
+                "انتخب",
+                "ضد",
+                "فاسد",
+                "سيء",
+                "الأفضل",
+                "الأسوأ",
+                "يجب أن تختار",
+                "لا تنتخب"
+            ],
+            "ku": [
+                "باشترین کاندید",
+                "دەنگ بدە بۆ",
+                "هەڵبژێرە",
+                "دژ بە",
+                "گەندەڵ",
+                "خراپ"
+            ],
+            "en": [
+                "best candidate",
+                "vote for",
+                "elect",
+                "against",
+                "corrupt",
+                "worst",
+                "don't vote for",
+                "must choose"
+            ]
+        },
+        "endorsementPatterns": [
+            "vote for [candidate]",
+            "support [party]",
+            "best choice",
+            "only option",
+            "[candidate] is the answer"
+        ],
+        "allowedPhrases": [
+            "learn about",
+            "meet the candidates",
+            "compare platforms",
+            "informed choice",
+            "your decision"
+        ]
+    },
+    "dataIntegrityRules": {
+        "governorates": {
+            "requiredCoverage": 18,
+            "names": [
+                "Baghdad",
+                "Basra",
+                "Nineveh",
+                "Erbil",
+                "Sulaymaniyah",
+                "Duhok",
+                "Anbar",
+                "Diyala",
+                "Kirkuk",
+                "Najaf",
+                "Karbala",
+                "Babil",
+                "Dhi Qar",
+                "Maysan",
+                "Wasit",
+                "Saladin",
+                "Muthanna",
+                "Qadisiyyah"
+            ]
+        },
+        "phoneFormat": {
+            "regex": "^\\+964-[0-9]{3}-[0-9]{3}-[0-9]{4}$",
+            "exampleValid": "+964-770-123-4567"
+        },
+        "emailFormat": {
+            "regex": "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$",
+            "preferredDomain": ".iq"
+        },
+        "timestampFormat": {
+            "iso8601": true,
+            "timezone": "Z"
+        },
+        "urlFormat": {
+            "protocols": [
+                "http",
+                "https"
+            ],
+            "requireProtocol": true
+        }
+    },
+    "performanceThresholds": {
+        "engagement": {
+            "min": 0.05,
+            "max": 0.10,
+            "target": 0.075
+        },
+        "views": {
+            "minTotal": 50000,
+            "targetTotal": 70000
+        },
+        "platformDistribution": {
+            "facebook": {
+                "target": 0.40,
+                "tolerance": 0.05
+            },
+            "twitter": {
+                "target": 0.30,
+                "tolerance": 0.05
+            },
+            "instagram": {
+                "target": 0.30,
+                "tolerance": 0.05
+            }
+        },
+        "languageBalance": {
+            "arabic": {
+                "target": 0.50,
+                "tolerance": 0.10
+            },
+            "kurdish": {
+                "target": 0.50,
+                "tolerance": 0.10
+            }
+        }
+    },
+    "partyBalanceRules": {
+        "checkBalance": true,
+        "minimumParties": 8,
+        "maxVariance": 0.15,
+        "excludeIndependents": false
+    },
+    "characterLimits": {
+        "facebook": {
+            "max": 5000,
+            "recommended": 500
+        },
+        "twitter": {
+            "max": 280,
+            "strict": true
+        },
+        "instagram": {
+            "max": 2200,
+            "recommended": 300
+        }
+    },
+    "crossReferenceValidation": {
+        "validatePostMetrics": true,
+        "validateContentReferences": true,
+        "validateGovernorateConsistency": true,
+        "validateIdUniqueness": true
+    },
+    "issueSeverity": {
+        "critical": {
+            "blocksApproval": true,
+            "examples": [
+                "schema_validation_failure",
+                "neutrality_score_below_threshold",
+                "missing_required_data",
+                "duplicate_ids",
+                "character_limit_violation"
+            ]
+        },
+        "warning": {
+            "blocksApproval": false,
+            "examples": [
+                "format_inconsistency",
+                "minor_data_quality",
+                "performance_slightly_off",
+                "missing_optional_fields"
+            ]
+        },
+        "info": {
+            "blocksApproval": false,
+            "examples": [
+                "optimization_suggestion",
+                "distribution_recommendation",
+                "enhancement_opportunity"
+            ]
+        }
+    },
+    "reportSettings": {
+        "generateMarkdown": true,
+        "generateJSON": true,
+        "includeExecutiveSummary": true,
+        "includeDetailedResults": true,
+        "includeRecommendations": true,
+        "markdownTemplate": "detailed"
+    },
+    "outputPaths": {
+        "integrationSummary": "./integration_summary.md",
+        "qaResults": "./qa_results.json"
+    },
+    "validation": {
+        "strictMode": false,
+        "stopOnFirstCritical": false,
+        "logAllIssues": true,
+        "generateDetailedLogs": true
+    },
+    "debugMode": false
+}
+
+
+
+
+
+
+

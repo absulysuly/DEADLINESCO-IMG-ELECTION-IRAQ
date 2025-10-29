@@ -1,0 +1,341 @@
+{
+  "events": [
+    {
+      "id": "evt_001",
+      "governorate": "Baghdad",
+      "category": "Hospitality",
+      "name": "Al-Rashid Hotel",
+      "contact": "+964-770-313-6694",
+      "capacity": 500,
+      "services": [
+        "Catering",
+        "AV Equipment",
+        "Parking"
+      ],
+      "address": "Al-Rashid Hotel, Baghdad",
+      "verified": false,
+      "timestamp": "2025-10-28T21:29:21.963Z",
+      "agentSignature": "Agent2_EventOutreach"
+    },
+    {
+      "id": "evt_002",
+      "governorate": "Basra",
+      "category": "Hospitality",
+      "name": "Basra Grand Hotel",
+      "contact": "+964-771-838-7762",
+      "capacity": 300,
+      "services": [
+        "Conference Rooms",
+        "Catering",
+        "Accommodation"
+      ],
+      "address": "Basra Grand Hotel, Basra",
+      "verified": false,
+      "timestamp": "2025-10-28T21:29:21.963Z",
+      "agentSignature": "Agent2_EventOutreach"
+    },
+    {
+      "id": "evt_003",
+      "governorate": "Nineveh",
+      "category": "Hospitality",
+      "name": "Erbil Rotana",
+      "contact": "+964-772-572-5321",
+      "capacity": 400,
+      "services": [
+        "Banquet Hall",
+        "Catering",
+        "Parking"
+      ],
+      "address": "Erbil Rotana, Nineveh",
+      "verified": false,
+      "timestamp": "2025-10-28T21:29:21.963Z",
+      "agentSignature": "Agent2_EventOutreach"
+    },
+    {
+      "id": "evt_004",
+      "governorate": "Erbil",
+      "category": "Hospitality",
+      "name": "Baghdad Convention Center",
+      "contact": "+964-773-587-4490",
+      "capacity": 1000,
+      "services": [
+        "Large Halls",
+        "AV Equipment",
+        "Catering"
+      ],
+      "address": "Baghdad Convention Center, Erbil",
+      "verified": false,
+      "timestamp": "2025-10-28T21:29:21.963Z",
+      "agentSignature": "Agent2_EventOutreach"
+    },
+    {
+      "id": "evt_005",
+      "governorate": "Sulaymaniyah",
+      "category": "Hospitality",
+      "name": "Elite Catering Services",
+      "contact": "+964-774-956-1313",
+      "capacity": 200,
+      "services": [
+        "Food Service",
+        "Event Catering"
+      ],
+      "address": "Elite Catering Services, Sulaymaniyah",
+      "verified": false,
+      "timestamp": "2025-10-28T21:29:21.963Z",
+      "agentSignature": "Agent2_EventOutreach"
+    },
+    {
+      "id": "evt_006",
+      "governorate": "Duhok",
+      "category": "Media",
+      "name": "Iraq Media Center",
+      "contact": "+964-775-494-2546",
+      "capacity": 100,
+      "services": [
+        "Press Rooms",
+        "Broadcasting Equipment"
+      ],
+      "address": "Iraq Media Center, Duhok",
+      "verified": false,
+      "timestamp": "2025-10-28T21:29:21.963Z",
+      "agentSignature": "Agent2_EventOutreach"
+    },
+    {
+      "id": "evt_007",
+      "governorate": "Anbar",
+      "category": "Media",
+      "name": "Al-Iraqiya Press Room",
+      "contact": "+964-776-962-9416",
+      "capacity": 50,
+      "services": [
+        "Journalism Support",
+        "Live Streaming"
+      ],
+      "address": "Al-Iraqiya Press Room, Anbar",
+      "verified": false,
+      "timestamp": "2025-10-28T21:29:21.963Z",
+      "agentSignature": "Agent2_EventOutreach"
+    },
+    {
+      "id": "evt_008",
+      "governorate": "Diyala",
+      "category": "Logistics",
+      "name": "Baghdad Logistics Hub",
+      "contact": "+964-777-429-9080",
+      "capacity": 150,
+      "services": [
+        "Equipment Rental",
+        "Storage"
+      ],
+      "address": "Baghdad Logistics Hub, Diyala",
+      "verified": false,
+      "timestamp": "2025-10-28T21:29:21.963Z",
+      "agentSignature": "Agent2_EventOutreach"
+    },
+    {
+      "id": "evt_009",
+      "governorate": "Kirkuk",
+      "category": "Logistics",
+      "name": "Quick Setup Services",
+      "contact": "+964-778-505-3324",
+      "capacity": 100,
+      "services": [
+        "Event Setup",
+        "Breakdown Services"
+      ],
+      "address": "Quick Setup Services, Kirkuk",
+      "verified": false,
+      "timestamp": "2025-10-28T21:29:21.963Z",
+      "agentSignature": "Agent2_EventOutreach"
+    },
+    {
+      "id": "evt_010",
+      "governorate": "Najaf",
+      "category": "Logistics",
+      "name": "Event Equipment Rental",
+      "contact": "+964-779-808-7646",
+      "capacity": 200,
+      "services": [
+        "Tables",
+        "Chairs",
+        "Tents"
+      ],
+      "address": "Event Equipment Rental, Najaf",
+      "verified": false,
+      "timestamp": "2025-10-28T21:29:21.963Z",
+      "agentSignature": "Agent2_EventOutreach"
+    },
+    {
+      "id": "evt_011",
+      "governorate": "Karbala",
+      "category": "Sponsors",
+      "name": "Zain Iraq",
+      "contact": "+964-7710-605-6335",
+      "capacity": 20,
+      "services": [
+        "Telecom Sponsorship",
+        "Internet Services"
+      ],
+      "address": "Zain Iraq, Karbala",
+      "verified": false,
+      "timestamp": "2025-10-28T21:29:21.963Z",
+      "agentSignature": "Agent2_EventOutreach"
+    },
+    {
+      "id": "evt_012",
+      "governorate": "Babil",
+      "category": "Sponsors",
+      "name": "Rasheed Bank",
+      "contact": "+964-7711-823-9518",
+      "capacity": 15,
+      "services": [
+        "Financial Sponsorship"
+      ],
+      "address": "Rasheed Bank, Babil",
+      "verified": false,
+      "timestamp": "2025-10-28T21:29:21.963Z",
+      "agentSignature": "Agent2_EventOutreach"
+    },
+    {
+      "id": "evt_013",
+      "governorate": "Dhi Qar",
+      "category": "Sponsors",
+      "name": "Iraqi Business Council",
+      "contact": "+964-7712-576-3352",
+      "capacity": 30,
+      "services": [
+        "Corporate Sponsorship"
+      ],
+      "address": "Iraqi Business Council, Dhi Qar",
+      "verified": false,
+      "timestamp": "2025-10-28T21:29:21.963Z",
+      "agentSignature": "Agent2_EventOutreach"
+    },
+    {
+      "id": "evt_014",
+      "governorate": "Maysan",
+      "category": "Sponsors",
+      "name": "AsiaCell Communications",
+      "contact": "+964-7713-879-4496",
+      "capacity": 25,
+      "services": [
+        "Telecom Sponsorship"
+      ],
+      "address": "AsiaCell Communications, Maysan",
+      "verified": false,
+      "timestamp": "2025-10-28T21:29:21.963Z",
+      "agentSignature": "Agent2_EventOutreach"
+    },
+    {
+      "id": "evt_015",
+      "governorate": "Wasit",
+      "category": "NGOs",
+      "name": "Iraqi Elections Watch",
+      "contact": "+964-7714-300-7055",
+      "capacity": 40,
+      "services": [
+        "Election Monitoring"
+      ],
+      "address": "Iraqi Elections Watch, Wasit",
+      "verified": false,
+      "timestamp": "2025-10-28T21:29:21.963Z",
+      "agentSignature": "Agent2_EventOutreach"
+    },
+    {
+      "id": "evt_016",
+      "governorate": "Saladin",
+      "category": "NGOs",
+      "name": "Democracy Center Iraq",
+      "contact": "+964-7715-372-3455",
+      "capacity": 50,
+      "services": [
+        "Civic Education"
+      ],
+      "address": "Democracy Center Iraq, Saladin",
+      "verified": false,
+      "timestamp": "2025-10-28T21:29:21.963Z",
+      "agentSignature": "Agent2_EventOutreach"
+    },
+    {
+      "id": "evt_017",
+      "governorate": "Muthanna",
+      "category": "Security",
+      "name": "Elite Security Services",
+      "contact": "+964-7716-507-7262",
+      "capacity": 30,
+      "services": [
+        "Venue Security",
+        "Crowd Control"
+      ],
+      "address": "Elite Security Services, Muthanna",
+      "verified": false,
+      "timestamp": "2025-10-28T21:29:21.963Z",
+      "agentSignature": "Agent2_EventOutreach"
+    },
+    {
+      "id": "evt_018",
+      "governorate": "Qadisiyyah",
+      "category": "Transport",
+      "name": "Baghdad Transport Co",
+      "contact": "+964-7717-626-1181",
+      "capacity": 100,
+      "services": [
+        "Bus Rental",
+        "Shuttle Services"
+      ],
+      "address": "Baghdad Transport Co, Qadisiyyah",
+      "verified": false,
+      "timestamp": "2025-10-28T21:29:21.963Z",
+      "agentSignature": "Agent2_EventOutreach"
+    },
+    {
+      "id": "evt_019",
+      "governorate": "Baghdad",
+      "category": "Tech",
+      "name": "Iraq Telecom",
+      "contact": "+964-7718-579-7409",
+      "capacity": 40,
+      "services": [
+        "Internet",
+        "AV Equipment"
+      ],
+      "address": "Iraq Telecom, Baghdad",
+      "verified": false,
+      "timestamp": "2025-10-28T21:29:21.963Z",
+      "agentSignature": "Agent2_EventOutreach"
+    },
+    {
+      "id": "evt_020",
+      "governorate": "Basra",
+      "category": "Medical",
+      "name": "Red Crescent Iraq",
+      "contact": "+964-7719-602-6063",
+      "capacity": 20,
+      "services": [
+        "Emergency Medical",
+        "First Aid"
+      ],
+      "address": "Red Crescent Iraq, Basra",
+      "verified": false,
+      "timestamp": "2025-10-28T21:29:21.963Z",
+      "agentSignature": "Agent2_EventOutreach"
+    }
+  ],
+  "categories": [
+    "Hospitality",
+    "Media",
+    "Logistics",
+    "Sponsors",
+    "NGOs",
+    "Security",
+    "Transport",
+    "Tech",
+    "Medical"
+  ],
+  "metadata": {
+    "totalCount": 20,
+    "lastUpdated": "2025-10-28T21:29:21.963Z",
+    "governoratesCovered": 18,
+    "categoriesUsed": 9
+  }
+}

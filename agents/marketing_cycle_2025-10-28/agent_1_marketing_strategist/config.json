@@ -1,0 +1,173 @@
+{
+    "agentId": "Agent1_MarketingStrategist",
+    "agentName": "Strategic Marketing & Outreach Coordinator",
+    "version": "1.0.0",
+    "executionOrder": 6,
+    "governoratePriorities": [
+        {
+            "name": "Baghdad",
+            "priority": "high",
+            "reason": "Capital city, largest population"
+        },
+        {
+            "name": "Basra",
+            "priority": "high",
+            "reason": "Economic hub, southern gateway"
+        },
+        {
+            "name": "Nineveh",
+            "priority": "high",
+            "reason": "Large population, diverse demographics"
+        },
+        {
+            "name": "Erbil",
+            "priority": "high",
+            "reason": "Kurdistan capital, political significance"
+        },
+        {
+            "name": "Sulaymaniyah",
+            "priority": "medium",
+            "reason": "Cultural center, active civic engagement"
+        },
+        {
+            "name": "Duhok",
+            "priority": "medium",
+            "reason": "Strategic location, growing population"
+        },
+        {
+            "name": "Anbar",
+            "priority": "medium",
+            "reason": "Largest by area, reconstruction focus"
+        },
+        {
+            "name": "Diyala",
+            "priority": "medium",
+            "reason": "Diverse population, agricultural importance"
+        },
+        {
+            "name": "Kirkuk",
+            "priority": "medium",
+            "reason": "Multi-ethnic composition, oil resources"
+        },
+        {
+            "name": "Najaf",
+            "priority": "medium",
+            "reason": "Religious significance, pilgrimage center"
+        },
+        {
+            "name": "Karbala",
+            "priority": "medium",
+            "reason": "Religious significance, tourism"
+        },
+        {
+            "name": "Babil",
+            "priority": "low",
+            "reason": "Historical significance, moderate population"
+        },
+        {
+            "name": "Dhi Qar",
+            "priority": "low",
+            "reason": "Southern region, agricultural focus"
+        },
+        {
+            "name": "Maysan",
+            "priority": "low",
+            "reason": "Border region, smaller population"
+        },
+        {
+            "name": "Wasit",
+            "priority": "low",
+            "reason": "Agricultural region, moderate engagement"
+        },
+        {
+            "name": "Saladin",
+            "priority": "low",
+            "reason": "Mixed demographics, stabilization phase"
+        },
+        {
+            "name": "Muthanna",
+            "priority": "low",
+            "reason": "Remote location, smallest population"
+        },
+        {
+            "name": "Qadisiyyah",
+            "priority": "low",
+            "reason": "Agricultural focus, moderate population"
+        }
+    ],
+    "campaignThemes": [
+        {
+            "theme": "Civic Participation",
+            "description": "Encouraging voter registration and participation",
+            "languages": [
+                "ar",
+                "ku"
+            ],
+            "targetAudience": "all"
+        },
+        {
+            "theme": "Transparency & Accountability",
+            "description": "Promoting electoral transparency and candidate accountability",
+            "languages": [
+                "ar",
+                "ku"
+            ],
+            "targetAudience": "all"
+        },
+        {
+            "theme": "Youth Engagement",
+            "description": "Mobilizing first-time voters and young citizens",
+            "languages": [
+                "ar",
+                "ku"
+            ],
+            "targetAudience": "18-35"
+        },
+        {
+            "theme": "Community Events",
+            "description": "Promoting town halls, debates, and civic gatherings",
+            "languages": [
+                "ar",
+                "ku"
+            ],
+            "targetAudience": "all"
+        }
+    ],
+    "kpiTargets": {
+        "candidatesPerGovernorate": 3,
+        "eventsPerGovernorate": 2,
+        "postsPerDay": 30,
+        "minEngagementRate": 0.05,
+        "contentLanguageBalance": 0.5,
+        "platformDistribution": {
+            "facebook": 0.4,
+            "twitter": 0.3,
+            "instagram": 0.3
+        }
+    },
+    "reportingSettings": {
+        "includeExecutiveSummary": true,
+        "includeGovernorateBreakdown": true,
+        "includeContentAnalysis": true,
+        "includeRecommendations": true,
+        "maxRecommendations": 5
+    },
+    "inputPaths": {
+        "events": "../agent_2_event_outreach/events_mock.json",
+        "candidates": "../agent_3_candidate_intelligence/candidates_mock.json",
+        "contentQueue": "../agent_4_content_creation/content_queue",
+        "metrics": "../agent_5_social_scheduler/social_metrics.json",
+        "qaReport": "../agent_6_integration_qa/integration_summary.md"
+    },
+    "outputPaths": {
+        "strategyReport": "./daily_strategy_report.md",
+        "consolidationLog": "./consolidation_log.json"
+    }
+}
+
+
+
+
+
+
+

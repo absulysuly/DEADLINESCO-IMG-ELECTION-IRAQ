@@ -1,0 +1,37 @@
+{
+  "timestamp": "2025-10-28T21:29:22.112Z",
+  "agentSignature": "Agent3_CandidateIntelligence",
+  "executionStats": {
+    "totalCandidatesCreated": 48,
+    "fromExistingCSV": 0,
+    "mockGenerated": 48,
+    "governoratesCovered": 18,
+    "partiesRepresented": 9
+  },
+  "governorateBreakdown": {
+    "Baghdad": 5,
+    "Basra": 4,
+    "Nineveh": 4,
+    "Erbil": 4,
+    "Sulaymaniyah": 3,
+    "Duhok": 2,
+    "Anbar": 3,
+    "Diyala": 2,
+    "Kirkuk": 3,
+    "Najaf": 2,
+    "Karbala": 2,
+    "Babil": 2,
+    "Dhi Qar": 2,
+    "Maysan": 2,
+    "Wasit": 2,
+    "Saladin": 2,
+    "Muthanna": 2,
+    "Qadisiyyah": 2
+  },
+  "dataQuality": {
+    "withSocialMedia": 48,
+    "withEmail": 48,
+    "withBio": 48,
+    "withWebsite": 0
+  }
+}

@@ -1,0 +1,305 @@
+{
+    "agentId": "Agent4_ContentCreation",
+    "agentName": "Content Creation Agent",
+    "version": "1.0.0",
+    "executionOrder": 3,
+    "targetCounts": {
+        "totalPosts": 30,
+        "arabicPosts": 15,
+        "kurdishPosts": 15
+    },
+    "platformDistribution": {
+        "facebook": 0.40,
+        "twitter": 0.30,
+        "instagram": 0.30
+    },
+    "contentThemes": [
+        {
+            "name": "Civic Participation",
+            "description": "Encourage voter registration and participation",
+            "percentage": 0.33,
+            "keywords": [
+                "vote",
+                "participate",
+                "register",
+                "civic duty"
+            ],
+            "tone": "engaging"
+        },
+        {
+            "name": "Candidate Transparency",
+            "description": "Promote informed voting through candidate profiles",
+            "percentage": 0.27,
+            "keywords": [
+                "candidate",
+                "profile",
+                "transparency",
+                "know your candidate"
+            ],
+            "tone": "informative"
+        },
+        {
+            "name": "Event Promotion",
+            "description": "Drive attendance to town halls, debates, forums",
+            "percentage": 0.23,
+            "keywords": [
+                "event",
+                "town hall",
+                "debate",
+                "forum",
+                "community"
+            ],
+            "tone": "urgent"
+        },
+        {
+            "name": "Platform Features",
+            "description": "Educate users about platform capabilities",
+            "percentage": 0.10,
+            "keywords": [
+                "feature",
+                "technology",
+                "digital",
+                "platform"
+            ],
+            "tone": "neutral"
+        },
+        {
+            "name": "Civic Education",
+            "description": "Inform about voting process, rights, responsibilities",
+            "percentage": 0.07,
+            "keywords": [
+                "education",
+                "rights",
+                "process",
+                "guide"
+            ],
+            "tone": "informative"
+        }
+    ],
+    "governorateTargeting": {
+        "National": 10,
+        "Baghdad": 3,
+        "Basra": 2,
+        "Erbil": 2,
+        "Nineveh": 2,
+        "Sulaymaniyah": 1,
+        "Duhok": 1,
+        "Other": 9
+    },
+    "platformLimits": {
+        "facebook": {
+            "maxCharacters": 5000,
+            "recommendedCharacters": 500,
+            "hashtagCount": {
+                "min": 3,
+                "max": 5
+            }
+        },
+        "twitter": {
+            "maxCharacters": 280,
+            "recommendedCharacters": 250,
+            "hashtagCount": {
+                "min": 2,
+                "max": 3
+            }
+        },
+        "instagram": {
+            "maxCharacters": 2200,
+            "recommendedCharacters": 300,
+            "hashtagCount": {
+                "min": 5,
+                "max": 10
+            }
+        }
+    },
+    "hashtagStrategy": {
+        "coreHashtags": {
+            "ar": [
+                "#العراق",
+                "#الانتخابات"
+            ],
+            "ku": [
+                "#عێراق",
+                "#هەڵبژاردن"
+            ]
+        },
+        "themeHashtags": {
+            "Civic Participation": {
+                "ar": [
+                    "#صوتك_مهم",
+                    "#المشاركة_المدنية",
+                    "#التسجيل_للانتخابات"
+                ],
+                "ku": [
+                    "#دەنگت_گرنگە",
+                    "#بەشداری_مەدەنی",
+                    "#تۆمارکردن"
+                ]
+            },
+            "Candidate Transparency": {
+                "ar": [
+                    "#شفافية_الانتخابات",
+                    "#اعرف_مرشحك",
+                    "#المرشحين"
+                ],
+                "ku": [
+                    "#شەفافیەتی_هەڵبژاردن",
+                    "#کاندیدەکانت_بناسە",
+                    "#کاندیدەکان"
+                ]
+            },
+            "Event Promotion": {
+                "ar": [
+                    "#فعاليات_انتخابية",
+                    "#الفعاليات",
+                    "#مناقشة_مجتمعية"
+                ],
+                "ku": [
+                    "#بۆنەکانی_هەڵبژاردن",
+                    "#بۆنەکان",
+                    "#گفتوگۆی_کۆمەڵگا"
+                ]
+            },
+            "Platform Features": {
+                "ar": [
+                    "#منصة_الانتخابات",
+                    "#العراق_الرقمي",
+                    "#التكنولوجيا"
+                ],
+                "ku": [
+                    "#پلاتفۆرمی_هەڵبژاردن",
+                    "#عێراقی_دیجیتاڵ",
+                    "#تەکنەلۆژیا"
+                ]
+            },
+            "Civic Education": {
+                "ar": [
+                    "#التوعية_المدنية",
+                    "#حقوق_الناخبين",
+                    "#دليل_الناخب"
+                ],
+                "ku": [
+                    "#خوێندنەوەی_مەدەنی",
+                    "#مافی_دەنگدەران",
+                    "#ڕێنمایی_دەنگدەر"
+                ]
+            }
+        },
+        "governorateHashtags": {
+            "ar": {
+                "Baghdad": "#بغداد",
+                "Basra": "#البصرة",
+                "Nineveh": "#نينوى",
+                "Erbil": "#أربيل",
+                "Sulaymaniyah": "#السليمانية",
+                "Duhok": "#دهوك",
+                "Anbar": "#الأنبار",
+                "Diyala": "#ديالى",
+                "Kirkuk": "#كركوك",
+                "Najaf": "#النجف",
+                "Karbala": "#كربلاء",
+                "Babil": "#بابل",
+                "Dhi Qar": "#ذي_قار",
+                "Maysan": "#ميسان",
+                "Wasit": "#واسط",
+                "Saladin": "#صلاح_الدين",
+                "Muthanna": "#المثنى",
+                "Qadisiyyah": "#القادسية"
+            },
+            "ku": {
+                "Erbil": "#هەولێر",
+                "Sulaymaniyah": "#سلێمانی",
+                "Duhok": "#دهۆک",
+                "Kirkuk": "#کەرکووک"
+            }
+        }
+    },
+    "neutralitySettings": {
+        "enforceNeutrality": true,
+        "minimumScore": 1.0,
+        "prohibitedKeywords": [
+            "endorse",
+            "support",
+            "vote for",
+            "against",
+            "best candidate",
+            "worst",
+            "corrupt",
+            "hero"
+        ],
+        "requiredDisclaimer": false
+    },
+    "schedulingSettings": {
+        "startDate": "2025-10-29T08:00:00Z",
+        "endDate": "2025-11-02T20:00:00Z",
+        "postingHours": {
+            "start": 8,
+            "end": 20
+        },
+        "intervalHours": 2
+    },
+    "visualDescriptions": {
+        "styles": [
+            "Modern minimalist with Iraqi flag colors",
+            "Infographic style with clear typography",
+            "Photographic with diverse Iraqi citizens",
+            "Illustrated with cultural motifs",
+            "Clean UI mockup with platform screenshots"
+        ],
+        "colorPalette": [
+            "#CE1126",
+            "#FFFFFF",
+            "#007A3D",
+            "#000000"
+        ],
+        "culturalElements": [
+            "Iraqi flag",
+            "Voting booth",
+            "Community gathering",
+            "Digital technology",
+            "Traditional Iraqi architecture"
+        ]
+    },
+    "audienceSegments": {
+        "youth": {
+            "ageRange": "18-35",
+            "platforms": [
+                "instagram",
+                "twitter"
+            ],
+            "tone": "engaging",
+            "percentage": 0.40
+        },
+        "general": {
+            "ageRange": "All",
+            "platforms": [
+                "facebook",
+                "twitter",
+                "instagram"
+            ],
+            "tone": "informative",
+            "percentage": 0.60
+        }
+    },
+    "inputPaths": {
+        "events": "../agent_2_event_outreach/events_mock.json",
+        "candidates": "../agent_3_candidate_intelligence/candidates_mock.json"
+    },
+    "outputPaths": {
+        "contentQueue": "./content_queue",
+        "contentLog": "./content_log.json"
+    },
+    "validation": {
+        "validateSchema": true,
+        "checkCharacterLimits": true,
+        "enforceNeutrality": true,
+        "validateHashtags": true
+    }
+}
+
+
+
+
+
+
+

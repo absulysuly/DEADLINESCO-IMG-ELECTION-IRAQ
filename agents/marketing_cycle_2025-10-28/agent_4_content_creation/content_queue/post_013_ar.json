@@ -1,0 +1,20 @@
+{
+  "postId": "post_013",
+  "language": "ar",
+  "platform": "twitter",
+  "content": "📅 فعالية قادمة! انضم إلينا في حوار مجتمعي حول مستقبل العراق. صوتك يصنع الفرق.",
+  "hashtags": [
+    "#فعاليات_انتخابية",
+    "#الحوار_المجتمعي",
+    "#العراق"
+  ],
+  "governorate": "Erbil",
+  "targetAudience": "18-35",
+  "scheduledFor": "2025-10-30T05:29:22.264Z",
+  "visualDescription": "Community town hall meeting with engaged Iraqi citizens",
+  "tone": "engaging",
+  "contentType": "event-promotion",
+  "neutralityScore": 1,
+  "timestamp": "2025-10-28T21:29:22.252Z",
+  "agentSignature": "Agent4_ContentCreation"
+}

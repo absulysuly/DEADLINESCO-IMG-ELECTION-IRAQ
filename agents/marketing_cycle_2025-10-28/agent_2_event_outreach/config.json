@@ -1,0 +1,240 @@
+{
+    "agentId": "Agent2_EventOutreach",
+    "agentName": "Event Outreach Agent",
+    "version": "1.0.0",
+    "executionOrder": 1,
+    "targetCounts": {
+        "totalVenues": 20,
+        "minPerGovernorate": 1
+    },
+    "governorates": [
+        "Baghdad",
+        "Basra",
+        "Nineveh",
+        "Erbil",
+        "Sulaymaniyah",
+        "Duhok",
+        "Anbar",
+        "Diyala",
+        "Kirkuk",
+        "Najaf",
+        "Karbala",
+        "Babil",
+        "Dhi Qar",
+        "Maysan",
+        "Wasit",
+        "Saladin",
+        "Muthanna",
+        "Qadisiyyah"
+    ],
+    "categories": [
+        {
+            "name": "Hospitality",
+            "description": "Hotels, conference centers, catering services",
+            "targetPercentage": 0.25,
+            "examples": [
+                "Hotel Al-Rashid",
+                "Baghdad Conference Center",
+                "Elite Catering"
+            ]
+        },
+        {
+            "name": "Media",
+            "description": "Press rooms, broadcasting facilities, media services",
+            "targetPercentage": 0.10,
+            "examples": [
+                "Iraq Media Center",
+                "Al-Iraqiya Press Room",
+                "Photo Studio Plus"
+            ]
+        },
+        {
+            "name": "Logistics",
+            "description": "Warehousing, equipment rental, setup services",
+            "targetPercentage": 0.15,
+            "examples": [
+                "Baghdad Logistics Hub",
+                "Quick Setup Services",
+                "Event Equipment Rental"
+            ]
+        },
+        {
+            "name": "Sponsors",
+            "description": "Corporate sponsors, businesses, organizations",
+            "targetPercentage": 0.20,
+            "examples": [
+                "Zain Iraq",
+                "Rasheed Bank",
+                "Iraqi Business Council"
+            ]
+        },
+        {
+            "name": "NGOs",
+            "description": "Civil society organizations, monitoring groups",
+            "targetPercentage": 0.10,
+            "examples": [
+                "Iraqi Elections Watch",
+                "Democracy Center",
+                "Civic Engagement Forum"
+            ]
+        },
+        {
+            "name": "Security",
+            "description": "Venue security, crowd management, emergency response",
+            "targetPercentage": 0.05,
+            "examples": [
+                "Elite Security Services",
+                "Crowd Control Specialists",
+                "SafeGuard Iraq"
+            ]
+        },
+        {
+            "name": "Transport",
+            "description": "Bus services, vehicle rental, parking management",
+            "targetPercentage": 0.05,
+            "examples": [
+                "Baghdad Transport Co",
+                "Quick Shuttle Services",
+                "Parking Solutions"
+            ]
+        },
+        {
+            "name": "Tech",
+            "description": "Internet providers, AV equipment, IT support",
+            "targetPercentage": 0.05,
+            "examples": [
+                "Iraq Telecom",
+                "AV Solutions Iraq",
+                "TechSupport Plus"
+            ]
+        },
+        {
+            "name": "Medical",
+            "description": "Emergency medical services, first aid, mobile clinics",
+            "targetPercentage": 0.05,
+            "examples": [
+                "Red Crescent Iraq",
+                "Emergency Medical Team",
+                "First Response Services"
+            ]
+        }
+    ],
+    "dataGeneration": {
+        "mockDataEnabled": true,
+        "useGoldmineFolders": true,
+        "goldminePath": "E:\\HamletUnified\\reuseable-asset-goldmine\\",
+        "phoneFormat": "+964-XXX-XXX-XXXX",
+        "emailDomain": ".iq",
+        "websiteProtocol": "https"
+    },
+    "capacityRanges": {
+        "large": {
+            "min": 200,
+            "max": 1000
+        },
+        "medium": {
+            "min": 50,
+            "max": 200
+        },
+        "small": {
+            "min": 10,
+            "max": 50
+        }
+    },
+    "venueTypes": {
+        "Hospitality": {
+            "types": [
+                "hotel",
+                "conference_center",
+                "banquet_hall",
+                "catering"
+            ],
+            "capacityType": "large"
+        },
+        "Media": {
+            "types": [
+                "press_room",
+                "broadcast_facility",
+                "photography_studio"
+            ],
+            "capacityType": "medium"
+        },
+        "Logistics": {
+            "types": [
+                "warehouse",
+                "equipment_rental",
+                "setup_service"
+            ],
+            "capacityType": "medium"
+        },
+        "Sponsors": {
+            "types": [
+                "corporation",
+                "business",
+                "organization"
+            ],
+            "capacityType": "small"
+        },
+        "NGOs": {
+            "types": [
+                "civil_society",
+                "monitoring_group",
+                "community_org"
+            ],
+            "capacityType": "small"
+        },
+        "Security": {
+            "types": [
+                "security_service",
+                "crowd_management",
+                "emergency_response"
+            ],
+            "capacityType": "small"
+        },
+        "Transport": {
+            "types": [
+                "bus_company",
+                "vehicle_rental",
+                "parking_management"
+            ],
+            "capacityType": "medium"
+        },
+        "Tech": {
+            "types": [
+                "isp",
+                "av_equipment",
+                "it_support"
+            ],
+            "capacityType": "small"
+        },
+        "Medical": {
+            "types": [
+                "emergency_medical",
+                "first_aid",
+                "mobile_clinic"
+            ],
+            "capacityType": "small"
+        }
+    },
+    "inputPaths": {
+        "goldmineFolder": "E:\\HamletUnified\\reuseable-asset-goldmine\\",
+        "existingVenues": "./existing_venues.csv"
+    },
+    "outputPaths": {
+        "eventsData": "./events_mock.json",
+        "executionLog": "./outreach_log.json"
+    },
+    "validation": {
+        "requireAllCategories": true,
+        "requireAllGovernorates": true,
+        "validatePhoneFormat": true,
+        "validateSchema": true
+    }
+}
+
+
+
+
+
+
+

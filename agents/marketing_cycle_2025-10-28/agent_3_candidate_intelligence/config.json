@@ -1,0 +1,280 @@
+{
+    "agentId": "Agent3_CandidateIntelligence",
+    "agentName": "Candidate Intelligence Agent",
+    "version": "1.0.0",
+    "executionOrder": 1,
+    "targetCounts": {
+        "totalCandidates": 50,
+        "minPerGovernorate": 2
+    },
+    "governorates": [
+        "Baghdad",
+        "Basra",
+        "Nineveh",
+        "Erbil",
+        "Sulaymaniyah",
+        "Duhok",
+        "Anbar",
+        "Diyala",
+        "Kirkuk",
+        "Najaf",
+        "Karbala",
+        "Babil",
+        "Dhi Qar",
+        "Maysan",
+        "Wasit",
+        "Saladin",
+        "Muthanna",
+        "Qadisiyyah"
+    ],
+    "governorateTargets": {
+        "Baghdad": 5,
+        "Basra": 4,
+        "Nineveh": 4,
+        "Erbil": 4,
+        "Sulaymaniyah": 3,
+        "Duhok": 2,
+        "Anbar": 3,
+        "Diyala": 2,
+        "Kirkuk": 3,
+        "Najaf": 2,
+        "Karbala": 2,
+        "Babil": 2,
+        "Dhi Qar": 2,
+        "Maysan": 2,
+        "Wasit": 2,
+        "Saladin": 2,
+        "Muthanna": 2,
+        "Qadisiyyah": 2
+    },
+    "politicalParties": [
+        {
+            "nameArabic": "تحالف الوطن",
+            "nameEnglish": "National Coalition",
+            "type": "coalition"
+        },
+        {
+            "nameArabic": "التحالف الكردستاني",
+            "nameEnglish": "Kurdistan Alliance",
+            "type": "coalition"
+        },
+        {
+            "nameArabic": "الحزب الديمقراطي الكردستاني",
+            "nameEnglish": "Kurdistan Democratic Party",
+            "type": "party"
+        },
+        {
+            "nameArabic": "الاتحاد الوطني الكردستاني",
+            "nameEnglish": "Patriotic Union of Kurdistan",
+            "type": "party"
+        },
+        {
+            "nameArabic": "التيار الصدري",
+            "nameEnglish": "Sadrist Movement",
+            "type": "movement"
+        },
+        {
+            "nameArabic": "تحالف الفتح",
+            "nameEnglish": "Fatah Alliance",
+            "type": "coalition"
+        },
+        {
+            "nameArabic": "تحالف النصر",
+            "nameEnglish": "Victory Alliance",
+            "type": "coalition"
+        },
+        {
+            "nameArabic": "حركة التغيير",
+            "nameEnglish": "Change Movement (Gorran)",
+            "type": "movement"
+        },
+        {
+            "nameArabic": "مستقل",
+            "nameEnglish": "Independent",
+            "type": "independent"
+        }
+    ],
+    "professions": [
+        {
+            "titleArabic": "محامي",
+            "titleEnglish": "Lawyer",
+            "percentage": 0.15
+        },
+        {
+            "titleArabic": "طبيب",
+            "titleEnglish": "Doctor",
+            "percentage": 0.10
+        },
+        {
+            "titleArabic": "مهندس",
+            "titleEnglish": "Engineer",
+            "percentage": 0.10
+        },
+        {
+            "titleArabic": "أستاذ جامعي",
+            "titleEnglish": "University Professor",
+            "percentage": 0.15
+        },
+        {
+            "titleArabic": "رجل أعمال",
+            "titleEnglish": "Business Owner",
+            "percentage": 0.15
+        },
+        {
+            "titleArabic": "ناشط مدني",
+            "titleEnglish": "Civil Society Activist",
+            "percentage": 0.20
+        },
+        {
+            "titleArabic": "موظف حكومي سابق",
+            "titleEnglish": "Former Government Official",
+            "percentage": 0.10
+        },
+        {
+            "titleArabic": "صحفي",
+            "titleEnglish": "Journalist",
+            "percentage": 0.05
+        }
+    ],
+    "ageRanges": [
+        {
+            "min": 25,
+            "max": 35,
+            "percentage": 0.20
+        },
+        {
+            "min": 36,
+            "max": 45,
+            "percentage": 0.30
+        },
+        {
+            "min": 46,
+            "max": 55,
+            "percentage": 0.30
+        },
+        {
+            "min": 56,
+            "max": 70,
+            "percentage": 0.20
+        }
+    ],
+    "dataGeneration": {
+        "mockDataEnabled": true,
+        "useExistingCSV": true,
+        "phoneFormat": "+964-XXX-XXX-XXXX",
+        "phoneAreaCodes": [
+            "770",
+            "771",
+            "772",
+            "773",
+            "774",
+            "775",
+            "776",
+            "777",
+            "778",
+            "780",
+            "781"
+        ],
+        "emailDomain": "example.iq",
+        "socialMediaPlatforms": [
+            "facebook",
+            "twitter",
+            "instagram"
+        ]
+    },
+    "nameGenerators": {
+        "arabicFirstNames": [
+            "محمد",
+            "أحمد",
+            "علي",
+            "حسن",
+            "حسين",
+            "عمر",
+            "خالد",
+            "يوسف",
+            "فاطمة",
+            "زينب",
+            "مريم",
+            "عائشة",
+            "سارة",
+            "نور",
+            "رقية"
+        ],
+        "arabicFatherNames": [
+            "أحمد",
+            "علي",
+            "حسن",
+            "حسين",
+            "عبدالله",
+            "محمود",
+            "إبراهيم",
+            "خالد"
+        ],
+        "arabicFamilyNames": [
+            "الجبوري",
+            "التميمي",
+            "الدليمي",
+            "الكردي",
+            "البصري",
+            "الموصلي",
+            "النجفي",
+            "الكربلائي",
+            "العبيدي",
+            "الشمري",
+            "الزبيدي"
+        ],
+        "kurdishFirstNames": [
+            "هیوا",
+            "آواز",
+            "دلوفان",
+            "دیاکو",
+            "رەشید",
+            "کریم",
+            "شیلان",
+            "هەڵۆ"
+        ],
+        "kurdishFatherNames": [
+            "رەشید",
+            "کریم",
+            "محمود",
+            "احمد",
+            "حسن",
+            "عبدالله"
+        ],
+        "kurdishFamilyNames": [
+            "بارزانی",
+            "طالبانی",
+            "هەورامی",
+            "سلێمانی",
+            "هەولێری"
+        ]
+    },
+    "inputPaths": {
+        "existingDataFolder": "E:\\HamletUnified\\data\\",
+        "cleanDataFolder": "E:\\HamletUnified\\clean_election_data\\",
+        "goldmineFolder": "E:\\HamletUnified\\reuseable-asset-goldmine\\"
+    },
+    "outputPaths": {
+        "candidatesData": "./candidates_mock.json",
+        "intelligenceLog": "./intelligence_log.json"
+    },
+    "validation": {
+        "requireAllGovernorates": true,
+        "validatePhoneFormat": true,
+        "validateSchema": true,
+        "checkDuplicates": true,
+        "minPartyDiversity": 8
+    },
+    "neutralitySettings": {
+        "enforceNeutralLanguage": true,
+        "avoidPromotionalContent": true,
+        "balancedPartyRepresentation": true
+    }
+}
+
+
+
+
+
+
+

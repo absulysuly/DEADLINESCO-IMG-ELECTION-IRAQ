@@ -1,0 +1,20 @@
+{
+  "postId": "post_009",
+  "language": "ar",
+  "platform": "instagram",
+  "content": "💡 هل تعلم؟ منصتنا تتيح لك مقارنة برامج المرشحين واختيار الأنسب لمحافظتك.",
+  "hashtags": [
+    "#منصة_الانتخابات",
+    "#العراق_الرقمي",
+    "#التكنولوجيا"
+  ],
+  "governorate": "Nineveh",
+  "targetAudience": "18-35",
+  "scheduledFor": "2025-10-30T09:29:22.261Z",
+  "visualDescription": "Modern app interface showing candidate comparison features",
+  "tone": "engaging",
+  "contentType": "civic-engagement",
+  "neutralityScore": 1,
+  "timestamp": "2025-10-28T21:29:22.252Z",
+  "agentSignature": "Agent4_ContentCreation"
+}

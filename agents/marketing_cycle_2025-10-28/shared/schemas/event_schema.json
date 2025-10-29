@@ -1,0 +1,135 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Event and Venue Data Schema",
+    "description": "Schema for event management data in the Iraqi Election Platform",
+    "type": "object",
+    "required": [
+        "events",
+        "categories"
+    ],
+    "properties": {
+        "events": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "required": [
+                    "id",
+                    "governorate",
+                    "category",
+                    "name",
+                    "timestamp",
+                    "agentSignature"
+                ],
+                "properties": {
+                    "id": {
+                        "type": "string",
+                        "pattern": "^evt_[0-9]{3,}$",
+                        "description": "Unique event/venue identifier"
+                    },
+                    "governorate": {
+                        "type": "string",
+                        "enum": [
+                            "Baghdad",
+                            "Basra",
+                            "Nineveh",
+                            "Erbil",
+                            "Sulaymaniyah",
+                            "Duhok",
+                            "Anbar",
+                            "Diyala",
+                            "Kirkuk",
+                            "Najaf",
+                            "Karbala",
+                            "Babil",
+                            "Dhi Qar",
+                            "Maysan",
+                            "Wasit",
+                            "Saladin",
+                            "Muthanna",
+                            "Qadisiyyah"
+                        ]
+                    },
+                    "category": {
+                        "type": "string",
+                        "enum": [
+                            "Hospitality",
+                            "Media",
+                            "Logistics",
+                            "Sponsors",
+                            "NGOs",
+                            "Security",
+                            "Transport",
+                            "Tech",
+                            "Medical"
+                        ]
+                    },
+                    "name": {
+                        "type": "string",
+                        "description": "Venue or event name"
+                    },
+                    "contact": {
+                        "type": "string",
+                        "pattern": "^\\+964-[0-9]{3}-[0-9]{3}-[0-9]{4}$",
+                        "description": "Contact phone number"
+                    },
+                    "capacity": {
+                        "type": "integer",
+                        "minimum": 1,
+                        "description": "Venue capacity"
+                    },
+                    "services": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        },
+                        "description": "List of services offered"
+                    },
+                    "address": {
+                        "type": "string",
+                        "description": "Physical address"
+                    },
+                    "verified": {
+                        "type": "boolean",
+                        "description": "Whether the venue data has been verified"
+                    },
+                    "timestamp": {
+                        "type": "string",
+                        "format": "date-time",
+                        "description": "ISO 8601 timestamp of data creation"
+                    },
+                    "agentSignature": {
+                        "type": "string",
+                        "pattern": "^Agent[0-9]_[A-Za-z]+$",
+                        "description": "Agent that created this entry"
+                    }
+                }
+            }
+        },
+        "categories": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": "List of event categories"
+        },
+        "metadata": {
+            "type": "object",
+            "properties": {
+                "totalCount": {
+                    "type": "integer"
+                },
+                "lastUpdated": {
+                    "type": "string",
+                    "format": "date-time"
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+

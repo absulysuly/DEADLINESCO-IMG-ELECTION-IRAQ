@@ -1,0 +1,136 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Social Media Content Schema",
+    "description": "Schema for social media post content in the Iraqi Election Platform",
+    "type": "object",
+    "required": [
+        "postId",
+        "language",
+        "platform",
+        "content",
+        "timestamp",
+        "agentSignature"
+    ],
+    "properties": {
+        "postId": {
+            "type": "string",
+            "pattern": "^post_[0-9]{3,}$",
+            "description": "Unique post identifier"
+        },
+        "language": {
+            "type": "string",
+            "enum": [
+                "ar",
+                "ku",
+                "en"
+            ],
+            "description": "Content language (ar=Arabic, ku=Kurdish, en=English)"
+        },
+        "platform": {
+            "type": "string",
+            "enum": [
+                "facebook",
+                "twitter",
+                "instagram",
+                "x"
+            ],
+            "description": "Target social media platform"
+        },
+        "content": {
+            "type": "string",
+            "minLength": 10,
+            "maxLength": 5000,
+            "description": "Post content text"
+        },
+        "hashtags": {
+            "type": "array",
+            "items": {
+                "type": "string",
+                "pattern": "^#[\\w\\u0600-\\u06FF]+"
+            },
+            "description": "List of hashtags"
+        },
+        "governorate": {
+            "type": "string",
+            "enum": [
+                "Baghdad",
+                "Basra",
+                "Nineveh",
+                "Erbil",
+                "Sulaymaniyah",
+                "Duhok",
+                "Anbar",
+                "Diyala",
+                "Kirkuk",
+                "Najaf",
+                "Karbala",
+                "Babil",
+                "Dhi Qar",
+                "Maysan",
+                "Wasit",
+                "Saladin",
+                "Muthanna",
+                "Qadisiyyah",
+                "National"
+            ]
+        },
+        "targetAudience": {
+            "type": "string",
+            "description": "Target demographic (e.g., '18-35', 'All')"
+        },
+        "scheduledFor": {
+            "type": "string",
+            "format": "date-time",
+            "description": "ISO 8601 timestamp for scheduled posting"
+        },
+        "visualDescription": {
+            "type": "string",
+            "description": "Description of accompanying visual/image"
+        },
+        "tone": {
+            "type": "string",
+            "enum": [
+                "informative",
+                "engaging",
+                "urgent",
+                "celebratory",
+                "neutral"
+            ],
+            "description": "Content tone"
+        },
+        "contentType": {
+            "type": "string",
+            "enum": [
+                "announcement",
+                "educational",
+                "call-to-action",
+                "event-promotion",
+                "civic-engagement"
+            ],
+            "description": "Type of content"
+        },
+        "neutralityScore": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1,
+            "description": "Political neutrality score (1 = fully neutral)"
+        },
+        "timestamp": {
+            "type": "string",
+            "format": "date-time",
+            "description": "ISO 8601 timestamp of content creation"
+        },
+        "agentSignature": {
+            "type": "string",
+            "pattern": "^Agent[0-9]_[A-Za-z]+$",
+            "description": "Agent that created this content"
+        }
+    }
+}
+
+
+
+
+
+
+
