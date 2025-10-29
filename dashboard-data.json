@@ -1,0 +1,445 @@
+{
+  "agents": [
+    {
+      "id": "agent-01",
+      "name": "Content Generator Agent",
+      "status": "active",
+      "progress": 95,
+      "lastRun": "2025-10-29T01:28:28.899Z",
+      "tasksCompleted": 5234,
+      "currentTask": "Generating bilingual social media posts"
+    },
+    {
+      "id": "agent-02",
+      "name": "Election Data Scraper",
+      "status": "active",
+      "progress": 87,
+      "lastRun": "2025-10-29T01:28:28.899Z",
+      "tasksCompleted": 892,
+      "currentTask": "Monitoring IHEC updates"
+    },
+    {
+      "id": "agent-03",
+      "name": "Social Media Monitor",
+      "status": "active",
+      "progress": 92,
+      "lastRun": "2025-10-29T01:28:28.899Z",
+      "tasksCompleted": 3421,
+      "currentTask": "Tracking election sentiment"
+    },
+    {
+      "id": "agent-04",
+      "name": "Security Alert System",
+      "status": "active",
+      "progress": 78,
+      "lastRun": "2025-10-29T01:28:28.899Z",
+      "tasksCompleted": 234,
+      "currentTask": "Monitoring vote-buying patterns"
+    },
+    {
+      "id": "agent-05",
+      "name": "Coalition Tracker",
+      "status": "active",
+      "progress": 85,
+      "lastRun": "2025-10-29T01:28:28.899Z",
+      "tasksCompleted": 167,
+      "currentTask": "Analyzing coalition stability"
+    },
+    {
+      "id": "agent-06",
+      "name": "News Aggregator",
+      "status": "active",
+      "progress": 91,
+      "lastRun": "2025-10-29T01:28:28.899Z",
+      "tasksCompleted": 1823,
+      "currentTask": "Collecting articles from 15 sources"
+    }
+  ],
+  "governorateStats": [
+    {
+      "name": "Baghdad",
+      "population": 8000000,
+      "registeredVoters": 5200000,
+      "candidates": 1245,
+      "pollingStations": 1500,
+      "turnoutRate": "63.91",
+      "securityLevel": "medium",
+      "dominantLanguage": "Arabic"
+    },
+    {
+      "name": "Basra",
+      "population": 2500000,
+      "registeredVoters": 1625000,
+      "candidates": 387,
+      "pollingStations": 420,
+      "turnoutRate": "53.64",
+      "securityLevel": "medium",
+      "dominantLanguage": "Arabic"
+    },
+    {
+      "name": "Nineveh",
+      "population": 3500000,
+      "registeredVoters": 2275000,
+      "candidates": 612,
+      "pollingStations": 650,
+      "turnoutRate": "51.27",
+      "securityLevel": "low",
+      "dominantLanguage": "Arabic"
+    },
+    {
+      "name": "Erbil",
+      "population": 1600000,
+      "registeredVoters": 1040000,
+      "candidates": 289,
+      "pollingStations": 310,
+      "turnoutRate": "74.45",
+      "securityLevel": "low",
+      "dominantLanguage": "Kurdish"
+    },
+    {
+      "name": "Sulaymaniyah",
+      "population": 1800000,
+      "registeredVoters": 1170000,
+      "candidates": 324,
+      "pollingStations": 350,
+      "turnoutRate": "59.20",
+      "securityLevel": "high",
+      "dominantLanguage": "Kurdish"
+    },
+    {
+      "name": "Duhok",
+      "population": 1300000,
+      "registeredVoters": 845000,
+      "candidates": 198,
+      "pollingStations": 240,
+      "turnoutRate": "53.32",
+      "securityLevel": "high",
+      "dominantLanguage": "Kurdish"
+    },
+    {
+      "name": "Anbar",
+      "population": 1700000,
+      "registeredVoters": 1105000,
+      "candidates": 276,
+      "pollingStations": 380,
+      "turnoutRate": "70.67",
+      "securityLevel": "high",
+      "dominantLanguage": "Arabic"
+    },
+    {
+      "name": "Diyala",
+      "population": 1500000,
+      "registeredVoters": 975000,
+      "candidates": 234,
+      "pollingStations": 320,
+      "turnoutRate": "67.39",
+      "securityLevel": "medium",
+      "dominantLanguage": "Arabic"
+    },
+    {
+      "name": "Kirkuk",
+      "population": 1500000,
+      "registeredVoters": 975000,
+      "candidates": 298,
+      "pollingStations": 330,
+      "turnoutRate": "76.79",
+      "securityLevel": "high",
+      "dominantLanguage": "Arabic"
+    },
+    {
+      "name": "Saladin",
+      "population": 1500000,
+      "registeredVoters": 975000,
+      "candidates": 245,
+      "pollingStations": 340,
+      "turnoutRate": "51.56",
+      "securityLevel": "medium",
+      "dominantLanguage": "Arabic"
+    },
+    {
+      "name": "Wasit",
+      "population": 1300000,
+      "registeredVoters": 845000,
+      "candidates": 198,
+      "pollingStations": 280,
+      "turnoutRate": "76.25",
+      "securityLevel": "high",
+      "dominantLanguage": "Arabic"
+    },
+    {
+      "name": "Maysan",
+      "population": 1000000,
+      "registeredVoters": 650000,
+      "candidates": 156,
+      "pollingStations": 220,
+      "turnoutRate": "53.84",
+      "securityLevel": "medium",
+      "dominantLanguage": "Arabic"
+    },
+    {
+      "name": "Babil",
+      "population": 2000000,
+      "registeredVoters": 1300000,
+      "candidates": 312,
+      "pollingStations": 390,
+      "turnoutRate": "57.09",
+      "securityLevel": "medium",
+      "dominantLanguage": "Arabic"
+    },
+    {
+      "name": "Karbala",
+      "population": 1200000,
+      "registeredVoters": 780000,
+      "candidates": 198,
+      "pollingStations": 270,
+      "turnoutRate": "65.77",
+      "securityLevel": "high",
+      "dominantLanguage": "Arabic"
+    },
+    {
+      "name": "Najaf",
+      "population": 1400000,
+      "registeredVoters": 910000,
+      "candidates": 234,
+      "pollingStations": 310,
+      "turnoutRate": "55.73",
+      "securityLevel": "low",
+      "dominantLanguage": "Arabic"
+    },
+    {
+      "name": "Dhi Qar",
+      "population": 2000000,
+      "registeredVoters": 1300000,
+      "candidates": 298,
+      "pollingStations": 410,
+      "turnoutRate": "67.71",
+      "securityLevel": "medium",
+      "dominantLanguage": "Arabic"
+    },
+    {
+      "name": "Muthanna",
+      "population": 800000,
+      "registeredVoters": 520000,
+      "candidates": 123,
+      "pollingStations": 180,
+      "turnoutRate": "64.70",
+      "securityLevel": "low",
+      "dominantLanguage": "Arabic"
+    },
+    {
+      "name": "Qadisiyyah",
+      "population": 1200000,
+      "registeredVoters": 780000,
+      "candidates": 187,
+      "pollingStations": 270,
+      "turnoutRate": "54.84",
+      "securityLevel": "low",
+      "dominantLanguage": "Arabic"
+    }
+  ],
+  "events": [
+    {
+      "title": "Presidential Debate - First Round",
+      "titleAr": "مناظرة الرئاسية - الجولة الأولى",
+      "titleKu": "مناظرەی سەرۆکایەتی - دەستپێک",
+      "date": "2025-10-15T16:00:00.000Z",
+      "venue": "Baghdad Convention Center",
+      "participants": [
+        "Nouri al-Maliki",
+        "Muqtada al-Sadr",
+        "Mohammed al-Halbousi"
+      ],
+      "expectedAttendees": 500,
+      "language": "Arabic",
+      "livestream": "https://ihec.iq/live"
+    },
+    {
+      "title": "Kurdistan Regional Debate",
+      "titleAr": "مناظرة إقليم كردستان",
+      "titleKu": "مناظرەی هەرێمی کوردستان",
+      "date": "2025-10-20T15:00:00.000Z",
+      "venue": "Erbil Conference Hall",
+      "participants": [
+        "Masoud Barzani",
+        "Bafel Talabani",
+        "Shaswar Abdulwahid"
+      ],
+      "expectedAttendees": 300,
+      "language": "Kurdish",
+      "livestream": "https://krg.org/live"
+    },
+    {
+      "title": "Youth Engagement Forum",
+      "titleAr": "منتدى مشاركة الشباب",
+      "titleKu": "کۆڕی بەشداریی گەنجان",
+      "date": "2025-10-25T13:00:00.000Z",
+      "venue": "University of Baghdad",
+      "participants": [
+        "Various Youth Leaders"
+      ],
+      "expectedAttendees": 1000,
+      "language": "Bilingual",
+      "livestream": "https://youth-forum.iq"
+    },
+    {
+      "title": "Women in Politics Panel",
+      "titleAr": "ندوة المرأة في السياسة",
+      "titleKu": "پانێڵی ژنان لە سیاسەت",
+      "date": "2025-10-28T12:00:00.000Z",
+      "venue": "Basra Cultural Center",
+      "participants": [
+        "Female Candidates Panel"
+      ],
+      "expectedAttendees": 400,
+      "language": "Arabic",
+      "livestream": "https://women-politics.iq"
+    }
+  ],
+  "articles": [
+    {
+      "title": "Iraq Prepares for Historic Parliamentary Elections",
+      "titleAr": "العراق يستعد لانتخابات برلمانية تاريخية",
+      "titleKu": "عێراق ئامادەیی بۆ هەڵبژاردنی مێژووی پەرلەمان دەکات",
+      "author": "Ahmed al-Safi",
+      "source": "Shafaq News",
+      "publishedAt": "2025-10-29T01:28:28.916Z",
+      "category": "Politics",
+      "excerpt": "With 7,768 candidates competing for 329 seats, Iraq prepares for what many call the most significant election since 2003.",
+      "language": "en"
+    },
+    {
+      "title": "Kurdish Parties Unite for Election Strategy",
+      "titleAr": "الأحزاب الكردية تتحد من أجل استراتيجية انتخابية",
+      "titleKu": "پارتە کوردییەکان یەکدەگرن بۆ ستراتیژی هەڵبژاردن",
+      "author": "Dilshad Ahmed",
+      "source": "Rudaw",
+      "publishedAt": "2025-10-29T01:28:28.916Z",
+      "category": "Regional",
+      "excerpt": "KDP and PUK announce coordinated approach despite internal disagreements.",
+      "language": "ku"
+    },
+    {
+      "title": "Voter Registration Reaches 25 Million",
+      "titleAr": "تسجيل الناخبين يصل إلى ٢٥ مليون",
+      "titleKu": "تۆماری دەنگدەران دەگاتە ٢٥ ملیۆن",
+      "author": "Sara Hussein",
+      "source": "Al Jazeera",
+      "publishedAt": "2025-10-29T01:28:28.916Z",
+      "category": "Statistics",
+      "excerpt": "IHEC announces successful registration campaign across all 18 governorates.",
+      "language": "ar"
+    }
+  ],
+  "debates": [
+    {
+      "title": "National Security Debate",
+      "titleAr": "مناظرة الأمن القومي",
+      "titleKu": "مناظرەی ئاسایشی نیشتمانی",
+      "date": "2025-11-05T16:00:00.000Z",
+      "moderator": "Saad al-Hadithi",
+      "participants": [
+        "Coalition Leaders"
+      ],
+      "topics": [
+        "Border security",
+        "ISIS remnants",
+        "Militia control"
+      ],
+      "venue": "Baghdad Media City",
+      "expectedViewers": 5000000
+    },
+    {
+      "title": "Economic Policy Debate",
+      "titleAr": "مناظرة السياسة الاقتصادية",
+      "titleKu": "مناظرەی سیاسەتی ئابووری",
+      "date": "2025-11-08T15:00:00.000Z",
+      "moderator": "Rana Ibrahim",
+      "participants": [
+        "Economic Experts Panel"
+      ],
+      "topics": [
+        "Oil revenue",
+        "Job creation",
+        "Foreign investment"
+      ],
+      "venue": "Erbil Chamber of Commerce",
+      "expectedViewers": 3000000
+    }
+  ],
+  "parties": [
+    {
+      "nameEn": "State of Law Coalition",
+      "nameAr": "ائتلاف دولة القانون",
+      "nameKu": "هاوپەیمانی دەوڵەتی یاسا",
+      "leader": "Nouri al-Maliki",
+      "founded": "2005",
+      "seats2021": 33,
+      "ideology": "Shia Islamist",
+      "strongholds": [
+        "Baghdad",
+        "Basra",
+        "Najaf"
+      ]
+    },
+    {
+      "nameEn": "Kurdistan Democratic Party",
+      "nameAr": "الحزب الديمقراطي الكردستاني",
+      "nameKu": "پارتی دیموکراتی کوردستان",
+      "leader": "Masoud Barzani",
+      "founded": "1946",
+      "seats2021": 31,
+      "ideology": "Kurdish Nationalism",
+      "strongholds": [
+        "Erbil",
+        "Duhok"
+      ]
+    },
+    {
+      "nameEn": "Sadrist Movement",
+      "nameAr": "التيار الصدري",
+      "nameKu": "جووڵانەوەی سەدر",
+      "leader": "Muqtada al-Sadr",
+      "founded": "2003",
+      "seats2021": 73,
+      "ideology": "Shia Populist",
+      "strongholds": [
+        "Baghdad",
+        "Najaf",
+        "Maysan"
+      ]
+    }
+  ],
+  "snapshot": {
+    "timestamp": "2025-10-29T01:28:28.934Z",
+    "totalCandidates": 7768,
+    "registeredVoters": 25000000,
+    "governorates": 18,
+    "pollingStations": 8200,
+    "agentsActive": 6,
+    "agentsCompleted": 24892,
+    "dataFreshness": "< 5 minutes",
+    "systemHealth": "optimal",
+    "alerts": {
+      "critical": 0,
+      "warning": 3,
+      "info": 12
+    },
+    "recentActivity": [
+      {
+        "action": "Data scrape completed",
+        "agent": "agent-02",
+        "timestamp": "2025-10-29T01:28:28.936Z"
+      },
+      {
+        "action": "250 candidates added",
+        "agent": "agent-01",
+        "timestamp": "2025-10-29T01:28:28.936Z"
+      },
+      {
+        "action": "Social sentiment updated",
+        "agent": "agent-03",
+        "timestamp": "2025-10-29T01:28:28.936Z"
+      }
+    ]
+  }
+}

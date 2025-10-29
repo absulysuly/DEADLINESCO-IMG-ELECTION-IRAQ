@@ -1,0 +1,176 @@
+{
+  "timestamp": "2025-10-29T01:28:22.857Z",
+  "ihec": {
+    "totalCandidates": 7768,
+    "registeredVoters": 25000000,
+    "pollingStations": 8200,
+    "electoralDistricts": 83,
+    "lastUpdated": "2025-10-29T01:28:22.894Z",
+    "electionDate": "2025-11-11",
+    "coalitions": [
+      {
+        "name": "State of Law Coalition",
+        "nameAr": "ائتلاف دولة القانون",
+        "candidates": 450,
+        "leader": "Nouri al-Maliki"
+      },
+      {
+        "name": "Sadrist Movement",
+        "nameAr": "التيار الصدري",
+        "candidates": 329,
+        "leader": "Muqtada al-Sadr"
+      }
+    ]
+  },
+  "news": [
+    {
+      "source": "Shafaq News",
+      "title": "العراق يستعد لانتخابات نوفمبر ٢٠٢٥",
+      "titleKu": "عێراق ئامادەیی بۆ هەڵبژاردنی تشرینی دووەم ٢٠٢٥ دەکات",
+      "url": "https://shafaq.com/ar/iraq-elections",
+      "publishedAt": "2025-10-29T01:28:22.950Z",
+      "language": "ar",
+      "category": "election"
+    },
+    {
+      "source": "Rudaw",
+      "title": "Kurdistan Region prepares for Iraqi parliamentary elections",
+      "titleKu": "هەرێمی کوردستان ئامادەیی بۆ هەڵبژاردنی پەرلەمانی عێراق دەکات",
+      "url": "https://www.rudaw.net/kurdish/iraq/elections",
+      "publishedAt": "2025-10-29T01:28:23.044Z",
+      "language": "ku",
+      "category": "election"
+    },
+    {
+      "source": "Al Jazeera",
+      "title": "الانتخابات العراقية: تحديات وآمال",
+      "url": "https://www.aljazeera.net/news/politics/iraq-elections",
+      "publishedAt": "2025-10-29T01:28:23.094Z",
+      "language": "ar",
+      "category": "analysis"
+    }
+  ],
+  "socialMedia": {
+    "period": "last_24_hours",
+    "totalMentions": 45230,
+    "platforms": {
+      "twitter": {
+        "mentions": 25000,
+        "sentiment": {
+          "positive": 0.45,
+          "neutral": 0.4,
+          "negative": 0.15
+        },
+        "topHashtags": [
+          "#الانتخابات_العراقية",
+          "#هەڵبژاردن_عێراق",
+          "#Iraq_Elections",
+          "#صوتك_مهم",
+          "#دەنگ_گرنگە"
+        ]
+      },
+      "facebook": {
+        "mentions": 15230,
+        "sentiment": {
+          "positive": 0.5,
+          "neutral": 0.35,
+          "negative": 0.15
+        },
+        "topPages": [
+          "Iraqi Parliament",
+          "IHEC Official",
+          "Kurdistan Regional Government"
+        ]
+      },
+      "instagram": {
+        "mentions": 5000,
+        "sentiment": {
+          "positive": 0.55,
+          "neutral": 0.35,
+          "negative": 0.1
+        }
+      }
+    },
+    "trends": [
+      {
+        "keyword": "voter registration",
+        "mentions": 8500,
+        "trend": "rising"
+      },
+      {
+        "keyword": "candidate debates",
+        "mentions": 6200,
+        "trend": "stable"
+      },
+      {
+        "keyword": "election security",
+        "mentions": 4800,
+        "trend": "rising"
+      }
+    ],
+    "alerts": [
+      {
+        "type": "misinformation",
+        "severity": "medium",
+        "content": "False claims about voter registration deadlines circulating",
+        "language": "ar"
+      }
+    ]
+  },
+  "security": [
+    {
+      "type": "vote_buying_suspicion",
+      "severity": "P2",
+      "governorate": "Anbar",
+      "description": "Unusual cash distribution reported near polling stations",
+      "timestamp": "2025-10-29T01:28:23.282Z",
+      "verified": false
+    },
+    {
+      "type": "minority_protection",
+      "severity": "P1",
+      "governorate": "Nineveh",
+      "description": "Christian minority reporting intimidation concerns",
+      "timestamp": "2025-10-29T01:28:23.282Z",
+      "verified": true,
+      "actionRequired": "IHEC investigation"
+    },
+    {
+      "type": "tribal_influence",
+      "severity": "P3",
+      "governorate": "Diyala",
+      "description": "Tribal leaders coordinating voting blocs",
+      "timestamp": "2025-10-29T01:28:23.282Z",
+      "verified": false
+    }
+  ],
+  "coalitions": [
+    {
+      "name": "State of Law Coalition",
+      "nameAr": "ائتلاف دولة القانون",
+      "nameKu": "هاوپەیمانی دەوڵەتی یاسا",
+      "parties": [
+        "Dawa Party",
+        "State of Law"
+      ],
+      "seats2021": 33,
+      "projectedSeats": 38,
+      "stability": "stable",
+      "leader": "Nouri al-Maliki"
+    },
+    {
+      "name": "Kurdistan Alliance",
+      "nameAr": "التحالف الكردستاني",
+      "nameKu": "هاوپەیمانی کوردستانی",
+      "parties": [
+        "KDP",
+        "PUK",
+        "New Generation"
+      ],
+      "seats2021": 62,
+      "projectedSeats": 58,
+      "stability": "fragile",
+      "notes": "Internal tensions between KDP and PUK"
+    }
+  ]
+}
