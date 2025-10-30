@@ -1,48 +1,145 @@
 import { User, UserRole, Post, Event, Article, Debate, Governorate, TeaHouseTopic, TeaHouseMessage, Language } from '../types.ts';
 import { MOCK_USERS, MOCK_POSTS, MOCK_WHISPERS, MOCK_EVENTS, MOCK_ARTICLES, MOCK_DEBATES, MOCK_TEA_HOUSE_TOPICS, MOCK_TEA_HOUSE_MESSAGES, IRAQI_GOVERNORATES_INFO } from '../constants.ts';
-import { Candidate, NewsArticle, PoliticalParty } from '../components/election/types.ts';
+import { Candidate as ElectionCandidate, NewsArticle, PoliticalParty } from '../components/election/types.ts';
+import type { Candidate as PortalCandidate } from '../lib/types.ts';
+import { fetchCandidateList } from '../lib/api.ts';
 
 // INSTANT LOADING - No delays
 const simulateFetch = <T>(data: T): Promise<T> => {
     return Promise.resolve(JSON.parse(JSON.stringify(data)));
 };
 
-export const getParties = (): Promise<string[]> => {
-    const parties = [...new Set(MOCK_USERS.filter(u => u.role === UserRole.Candidate).map(u => u.party))];
-    return simulateFetch(parties);
+const LIVE_CANDIDATE_CACHE_TTL = 1000 * 60 * 5; // 5 minutes
+let cachedPortalCandidates: PortalCandidate[] | null = null;
+let lastCandidateFetch = 0;
+
+const normaliseGender = (gender?: string): 'Male' | 'Female' => {
+    const normalized = (gender ?? '').toString().toLowerCase();
+    return normalized === 'female' || normalized === 'f' ? 'Female' : 'Male';
 };
 
-export const getCandidateStats = (): Promise<{ total: number; women: number; men: number; }> => {
-    const candidates = MOCK_USERS.filter(u => u.role === UserRole.Candidate);
-    const women = candidates.filter(c => c.gender === 'Female').length;
-    const men = candidates.length - women;
-    return simulateFetch({ total: candidates.length, women, men });
+const getAvatarForCandidate = (id: string, gender: 'Male' | 'Female') =>
+    `https://avatar.iran.liara.run/public/${gender === 'Female' ? 'girl' : 'boy'}?username=${encodeURIComponent(id)}`;
+
+const resolveGovernorate = (value: unknown): Governorate => {
+    if (typeof value === 'string') {
+        const match = IRAQI_GOVERNORATES_INFO.find(g => g.enName.toLowerCase() === value.toLowerCase());
+        if (match) {
+            return match.enName;
+        }
+    }
+    return 'Baghdad';
 };
 
-export const getUsers = (filters: { role?: UserRole, governorate?: Governorate | 'All', party?: string | 'All', gender?: 'Male' | 'Female' | 'All', authorId?: string, partySlug?: string, governorateSlug?: string }): Promise<User[]> => {
-    let users = MOCK_USERS;
+const mapPortalCandidateToUser = (candidate: PortalCandidate): User => {
+    const gender = normaliseGender(candidate.gender);
+    const id = candidate.id?.toString() ?? candidate.candidate_id?.toString() ?? candidate.ballot_number?.toString() ?? candidate.name;
+    return {
+        id,
+        name: candidate.name,
+        role: UserRole.Candidate,
+        avatarUrl: getAvatarForCandidate(id, gender),
+        verified: true,
+        party: candidate.party || 'Independent',
+        governorate: resolveGovernorate(candidate.governorate),
+        gender,
+    };
+};
+
+const mapPortalCandidateToElectionCandidate = (candidate: PortalCandidate): ElectionCandidate => {
+    const gender = normaliseGender(candidate.gender);
+    const id = candidate.id?.toString() ?? candidate.candidate_id?.toString() ?? candidate.ballot_number?.toString() ?? candidate.name;
+    return {
+        id,
+        name: candidate.name,
+        party: candidate.party || 'Independent',
+        imageUrl: getAvatarForCandidate(id, gender),
+        verified: true,
+    };
+};
+
+const loadPortalCandidates = async (): Promise<PortalCandidate[]> => {
+    const now = Date.now();
+    if (!cachedPortalCandidates || now - lastCandidateFetch > LIVE_CANDIDATE_CACHE_TTL) {
+        cachedPortalCandidates = await fetchCandidateList();
+        lastCandidateFetch = now;
+    }
+    return cachedPortalCandidates;
+};
+
+const applyUserFilters = (
+    users: User[],
+    filters: { role?: UserRole; governorate?: Governorate | 'All'; party?: string | 'All'; gender?: 'Male' | 'Female' | 'All'; authorId?: string; partySlug?: string; governorateSlug?: string }
+) => {
+    let filtered = [...users];
     if (filters.role) {
-        users = users.filter(u => u.role === filters.role);
+        filtered = filtered.filter(u => u.role === filters.role);
     }
     if (filters.governorate && filters.governorate !== 'All') {
-        users = users.filter(u => u.governorate === filters.governorate);
+        filtered = filtered.filter(u => u.governorate === filters.governorate);
     }
     if (filters.party && filters.party !== 'All') {
-        users = users.filter(u => u.party === filters.party);
+        filtered = filtered.filter(u => u.party === filters.party);
     }
     if (filters.gender && filters.gender !== 'All') {
-        users = users.filter(u => u.gender === filters.gender);
+        filtered = filtered.filter(u => u.gender === filters.gender);
     }
     if (filters.authorId) {
-        users = users.filter(u => u.id === filters.authorId);
+        filtered = filtered.filter(u => u.id === filters.authorId);
     }
     if (filters.partySlug) {
-        users = users.filter(u => u.partySlug === filters.partySlug);
+        filtered = filtered.filter(u => u.partySlug === filters.partySlug);
     }
     if (filters.governorateSlug) {
-        users = users.filter(u => u.governorateSlug === filters.governorateSlug);
+        filtered = filtered.filter(u => u.governorateSlug === filters.governorateSlug);
     }
-    return simulateFetch(users);
+    return filtered;
+};
+
+const getMockUsers = (filters: { role?: UserRole; governorate?: Governorate | 'All'; party?: string | 'All'; gender?: 'Male' | 'Female' | 'All'; authorId?: string; partySlug?: string; governorateSlug?: string }) =>
+    applyUserFilters(MOCK_USERS, filters);
+
+const getLiveUsers = async (filters: { role?: UserRole; governorate?: Governorate | 'All'; party?: string | 'All'; gender?: 'Male' | 'Female' | 'All'; authorId?: string; partySlug?: string; governorateSlug?: string }) => {
+    const portalCandidates = await loadPortalCandidates();
+    const users = portalCandidates.map(mapPortalCandidateToUser);
+    return applyUserFilters(users, filters);
+};
+
+export const getParties = async (): Promise<string[]> => {
+    try {
+        const portalCandidates = await loadPortalCandidates();
+        const parties = Array.from(new Set(portalCandidates.map(candidate => candidate.party).filter(Boolean))) as string[];
+        return parties.sort((a, b) => a.localeCompare(b, undefined, { sensitivity: 'base' }));
+    } catch (error) {
+        console.error('Failed to load parties from live API, falling back to mock data.', error);
+        return simulateFetch([...new Set(MOCK_USERS.filter(u => u.role === UserRole.Candidate).map(u => u.party))]);
+    }
+};
+
+export const getCandidateStats = async (): Promise<{ total: number; women: number; men: number; }> => {
+    try {
+        const portalCandidates = await loadPortalCandidates();
+        const total = portalCandidates.length;
+        const women = portalCandidates.filter(candidate => normaliseGender(candidate.gender) === 'Female').length;
+        const men = total - women;
+        return { total, women, men };
+    } catch (error) {
+        console.error('Failed to load candidate stats from live API, falling back to mock data.', error);
+        const candidates = MOCK_USERS.filter(u => u.role === UserRole.Candidate);
+        const women = candidates.filter(c => c.gender === 'Female').length;
+        const men = candidates.length - women;
+        return { total: candidates.length, women, men };
+    }
+};
+
+export const getUsers = async (filters: { role?: UserRole; governorate?: Governorate | 'All'; party?: string | 'All'; gender?: 'Male' | 'Female' | 'All'; authorId?: string; partySlug?: string; governorateSlug?: string }): Promise<User[]> => {
+    try {
+        const users = await getLiveUsers(filters);
+        return users.map(user => ({ ...user }));
+    } catch (error) {
+        console.error('Failed to load users from live API, falling back to mock data.', error);
+        return simulateFetch(getMockUsers(filters));
+    }
 };
 
 export const getPosts = (filters: { type?: 'Post' | 'Reel', authorId?: string, governorate?: Governorate | 'All', party?: string | 'All' }): Promise<Post[]> => {
@@ -231,44 +328,130 @@ export const submitIntegrityReport = async (formData: FormData): Promise<{ succe
     return simulateFetch({ success: true, trackingId: `IQ-REP-${Date.now()}` });
 };
 
-export const getDashboardStats = (): Promise<any> => {
-    return simulateFetch({
-        stats: { totalRegisteredVoters: 12500000, approvedCandidatesCount: 7769, expectedTurnoutPercentage: 65 },
-        participation: IRAQI_GOVERNORATES_INFO.map(g => ({
-            governorateId: g.id,
-            governorateName: g.name,
-            estimatedTurnout: 40 + Math.random() * 30
-        }))
-    });
+export const getDashboardStats = async (): Promise<any> => {
+    try {
+        const portalCandidates = await loadPortalCandidates();
+        return {
+            stats: {
+                totalRegisteredVoters: 12500000,
+                approvedCandidatesCount: portalCandidates.length,
+                expectedTurnoutPercentage: 65,
+            },
+            participation: IRAQI_GOVERNORATES_INFO.map(g => ({
+                governorateId: g.id,
+                governorateName: g.name,
+                estimatedTurnout: 40 + Math.random() * 30,
+            })),
+        };
+    } catch (error) {
+        console.error('Failed to load dashboard stats from live API, falling back to mock data.', error);
+        return simulateFetch({
+            stats: { totalRegisteredVoters: 12500000, approvedCandidatesCount: 7769, expectedTurnoutPercentage: 65 },
+            participation: IRAQI_GOVERNORATES_INFO.map(g => ({
+                governorateId: g.id,
+                governorateName: g.name,
+                estimatedTurnout: 40 + Math.random() * 30,
+            })),
+        });
+    }
 };
 
-export const getGovernorateDataByName = (name: string): Promise<{ governorate: any; candidates: Candidate[]; news: NewsArticle[] }> => {
-    const governorate = IRAQI_GOVERNORATES_INFO.find(g => g.enName === name);
-    const candidates = MOCK_USERS.filter(u => u.role === UserRole.Candidate && u.governorate === name).slice(0, 12).map(c => ({
-        id: c.id, name: c.name, party: c.party, imageUrl: c.avatarUrl, verified: c.verified
-    }));
-    const news = MOCK_ARTICLES.slice(0, 4).map(a => ({
-        id: a.id, title: a.title, summary: a.contentSnippet, date: a.timestamp
-    }));
-    return simulateFetch({ governorate, candidates, news });
+export const getGovernorateDataByName = async (name: string): Promise<{ governorate: any; candidates: ElectionCandidate[]; news: NewsArticle[] }> => {
+    const normalized = name.toLowerCase();
+    const buildNews = () =>
+        MOCK_ARTICLES.slice(0, 4).map(a => ({
+            id: a.id,
+            title: a.title,
+            summary: a.contentSnippet,
+            date: a.timestamp,
+        }));
+
+    try {
+        const portalCandidates = await loadPortalCandidates();
+        const candidates = portalCandidates
+            .filter(candidate => (candidate.governorate ?? '').toLowerCase() === normalized)
+            .map(mapPortalCandidateToElectionCandidate)
+            .slice(0, 12);
+
+        const governorate =
+            IRAQI_GOVERNORATES_INFO.find(g => g.enName.toLowerCase() === normalized || g.name === name) ?? {
+                id: 0,
+                enName: name,
+                name,
+                slug: name.toLowerCase().replace(/\s+/g, '-'),
+                region: 'central',
+            };
+
+        return { governorate, candidates, news: buildNews() };
+    } catch (error) {
+        console.error('Failed to load governorate data from live API, falling back to mock data.', error);
+        const governorate = IRAQI_GOVERNORATES_INFO.find(g => g.enName === name);
+        const candidates = MOCK_USERS.filter(u => u.role === UserRole.Candidate && u.governorate === name)
+            .slice(0, 12)
+            .map(c => ({ id: c.id, name: c.name, party: c.party, imageUrl: c.avatarUrl, verified: c.verified }));
+        return simulateFetch({ governorate, candidates, news: buildNews() });
+    }
 };
 
-export const getPartyById = (id: string): Promise<{ party: PoliticalParty; candidates: Candidate[] }> => {
-    // This is a mock; in a real app, you'd fetch the party by its ID.
-    const candidates = MOCK_USERS.filter(u => u.role === UserRole.Candidate).slice(0, 8).map(c => ({
-        id: c.id, name: c.name, party: c.party, imageUrl: c.avatarUrl, verified: c.verified
-    }));
-    return simulateFetch({
-        party: { id, name: 'Future Alliance', description: 'A forward-thinking party...', leader: 'Dr. Ahmad Al-Jubouri', founded: 2020, logoUrl: '' },
-        candidates
-    });
+export const getPartyById = async (id: string): Promise<{ party: PoliticalParty; candidates: ElectionCandidate[] }> => {
+    const normalized = id.toLowerCase();
+
+    try {
+        const portalCandidates = await loadPortalCandidates();
+        const matches = portalCandidates.filter(candidate => {
+            const partyName = (candidate.party ?? '').toLowerCase();
+            return (
+                partyName === normalized ||
+                partyName.replace(/\s+/g, '-') === normalized ||
+                partyName.includes(normalized)
+            );
+        });
+
+        if (matches.length === 0) {
+            throw new Error(`No candidates found for party identifier "${id}".`);
+        }
+
+        const canonicalPartyName = matches[0].party ?? id;
+        const party: PoliticalParty = {
+            id: normalized,
+            name: canonicalPartyName,
+            description: `Live candidate listings for ${canonicalPartyName}.`,
+            leader: '',
+            founded: new Date().getFullYear(),
+            logoUrl: '',
+        };
+
+        return {
+            party,
+            candidates: matches.slice(0, 12).map(mapPortalCandidateToElectionCandidate),
+        };
+    } catch (error) {
+        console.error('Failed to load party data from live API, falling back to mock data.', error);
+        const candidates = MOCK_USERS.filter(u => u.role === UserRole.Candidate)
+            .slice(0, 8)
+            .map(c => ({ id: c.id, name: c.name, party: c.party, imageUrl: c.avatarUrl, verified: c.verified }));
+        return simulateFetch({
+            party: { id, name: 'Future Alliance', description: 'A forward-thinking party...', leader: 'Dr. Ahmad Al-Jubouri', founded: 2020, logoUrl: '' },
+            candidates,
+        });
+    }
 };
 
-export const getAllElectionCandidates = (): Promise<Candidate[]> => {
-    const candidates = MOCK_USERS.filter(u => u.role === UserRole.Candidate).map(c => ({
-        id: c.id, name: c.name, party: c.party, imageUrl: c.avatarUrl, verified: c.verified
-    }));
-    return simulateFetch(candidates);
+export const getAllElectionCandidates = async (): Promise<ElectionCandidate[]> => {
+    try {
+        const portalCandidates = await loadPortalCandidates();
+        return portalCandidates.map(mapPortalCandidateToElectionCandidate);
+    } catch (error) {
+        console.error('Failed to load election candidates from live API, falling back to mock data.', error);
+        const candidates = MOCK_USERS.filter(u => u.role === UserRole.Candidate).map(c => ({
+            id: c.id,
+            name: c.name,
+            party: c.party,
+            imageUrl: c.avatarUrl,
+            verified: c.verified,
+        }));
+        return simulateFetch(candidates);
+    }
 };
 
 export const getApiConfig = (): Promise<any[]> => {
