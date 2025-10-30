@@ -44,7 +44,7 @@ This is a modern, bilingual, and responsive web application for browsing candida
 Create a file named `.env.local` in the root of the project and add the URL for your backend API:
 
 ```
-NEXT_PUBLIC_API_BASE_URL=http://localhost:4001
+NEXT_PUBLIC_API_BASE_URL=https://winter-leaf-f532.safaribosafar.workers.dev
 ```
 
 ### 2. Install Dependencies

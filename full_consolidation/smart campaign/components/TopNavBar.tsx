@@ -1,5 +1,5 @@
-import React from 'react';
-import { Language } from '../types.ts';
+import type { ReactElement } from 'react';
+import type { Language } from '../types.ts';
 import { UI_TEXT } from '../translations.ts';
 
 interface TopNavBarProps<T extends string> {
@@ -9,18 +9,17 @@ interface TopNavBarProps<T extends string> {
     language: Language;
 }
 
-const tabTranslationKeys: { [key: string]: keyof (typeof UI_TEXT)['en'] } = {
-    'Feed': 'feed',
-    'Real': 'real',
-    'Candidates': 'candidates',
-    'Whisper': 'whisper',
-    'Women': 'women',
-    'Minorities': 'minorities',
-    'Components': 'components',
+const tabTranslationKeys: Partial<Record<string, keyof (typeof UI_TEXT)['en']>> = {
+    Feed: 'feed',
+    Real: 'real',
+    Candidates: 'candidates',
+    Whisper: 'whisper',
+    Women: 'women',
+    Minorities: 'minorities',
+    Components: 'components',
 };
 
-
-function TopNavBar<T extends string>({ tabs, activeTab, onTabChange, language }: TopNavBarProps<T>) {
+const TopNavBar = <T extends string>({ tabs, activeTab, onTabChange, language }: TopNavBarProps<T>): ReactElement => {
     const texts = UI_TEXT[language];
     const navBarClasses = 'border-b border-[var(--color-glass-border)] top-nav-bar';
 
@@ -35,7 +34,7 @@ function TopNavBar<T extends string>({ tabs, activeTab, onTabChange, language }:
         <div className={navBarClasses}>
             <nav className="flex space-x-6 rtl:space-x-reverse px-4 sm:px-6 overflow-x-auto no-scrollbar -mb-px" aria-label="Tabs">
                 {tabs.map((tab) => {
-                    const translationKey = tabTranslationKeys[tab];
+                    const translationKey = tabTranslationKeys[tab as string];
                     const label = translationKey ? texts[translationKey] : tab;
 
                     return (
